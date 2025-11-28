@@ -1,0 +1,77 @@
+/* Centralização da caixa de largura */
+.centro-conteudo {
+  display: flex;/* Flexbox para centralização */
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* Largura máxima */
+.caixa-largura {
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* Título da página */
+.cabecalho-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;/* Espaça itens nas extremidades */
+  gap: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* titulo e subtitulo*/
+.grupo-texto-cabecalho {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+/* Título (pol de priv do recMente) */
+.titulo-pagina {
+  color: #111118;
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+/* texto de sua priv é nossa priori...*/
+.subtitulo-pagina {
+  color: #636388;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Texto de ultimas atualizacoes */
+.texto-meta {
+  color: #636388;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+/* Texto introdutório (no recup, estamos comprometidos...)*/
+.texto-intro {
+  color: #111118;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  max-width: 48rem;/* Limita largura para melhor leitura */
+  margin-left: auto;
+  /* Margens para centralizar horizontalmente  */
+  margin-right: auto;
+}

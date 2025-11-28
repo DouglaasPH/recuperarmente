@@ -1,0 +1,31 @@
+/* CONFIGURAÇÕES INCIAIS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONFIGURAÇÕES INCIAIS */
+body {
+  font-family: "Lexend", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* CONFIGURAÇÕES INCIAIS */
+.div-pagina {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* CONFIGURAÇÕES INCIAIS */
+.div-layout {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}

@@ -1,0 +1,53 @@
+/* FOOTER */
+.footer {
+  background-color: #f3f4f6;
+}
+
+/* FOOTER */
+.footer-div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  font-size: 0.875rem;
+  color: rgba(52, 58, 64, 0.6);
+}
+
+/* FOOTER */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* FOOTER */
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.15s;
+}
+
+/* FOOTER */
+.footer-link:hover {
+  color: #c8b6ff;
+}
+
+/* FOOTER */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* RESPONSIVIDADE PARA FOOTER */
+@media (min-width: 640px) {
+  .footer-div {
+    flex-direction: row;
+  }
+}
