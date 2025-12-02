@@ -1,0 +1,38 @@
+/* Caixa do titulo (Termos de Uso)*/
+.cabecalho-pagina {
+  display: flex;
+  flex-wrap: wrap;/* quebra de linha se necessário */
+  justify-content: space-between;/* Espaça elementos nas extremidades */
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+/* Título (Termos de Uso)*/
+.titulo-pagina {
+  color: #0f172a;
+  font-size: 2.25rem;
+  font-weight: 900;
+  min-width: 18rem;
+}
+
+/* Texto "ultimas atualizacao..." */
+.texto-meta {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Texto "BEM-VINDO AO..." */
+.texto-intro {
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

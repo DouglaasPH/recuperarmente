@@ -1,0 +1,174 @@
+/*engloba para centralizar a caixa de conteúdo*/
+.conteudo-principal {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/*conteúdo de textos principais, subtextos, imagem e o que é burnout*/
+.caixa-conteudo {
+  display: flex;
+  flex-direction: column;
+  /* Itens em coluna */
+  max-width: 72rem;
+  /* Largura máxima do conteúdo */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/*conteúdo com titulo e sub + botao + img. engloba a caixa inicial para ajustar os espaçamento com os paddings*/
+.secao-inicial {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/*conteúdo com titulo e sub + botao + img*/
+.caixa-inicial {
+  display: flex;
+  flex-direction: column-reverse;
+  /* Imagem em cima nos celulares */
+  align-items: center;
+  gap: 3rem;
+}
+
+/*conteúdo de titulo, sub e botao*/
+.coluna-texto {
+  display: flex;
+  flex-direction: column;
+  /* Itens empilhados */
+  gap: 2rem;
+  /* Espaçamento entre elementos */
+  text-align: center;
+  width: 100%;
+  /* Ocupar largura total */
+}
+
+/*titulo e sub*/
+.caixa-titulos {
+  display: flex;
+  flex-direction: column;
+  /* Títulos empilhados */
+  gap: 1rem;
+}
+
+.titulo-principal {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #343a40;
+}
+
+.subtitulo-principal {
+  font-size: 1rem;
+  /* Tamanho padrão */
+  font-weight: 400;
+  /* Peso normal */
+  line-height: 1.625;
+  /* Altura de linha confortável */
+  color: rgba(52, 58, 64, 0.8);
+  /* Cor mais suave */
+}
+
+.botao-acao {
+  display: flex;
+  width: 55%;
+  cursor: pointer;
+  align-items: center;
+  /*verticalmente */
+  justify-content: center;
+  /*horizontalmente */
+  align-self: center;
+  /* Centraliza na coluna */
+  border-radius: 9999px;
+  /* Botão totalmente arredondado */
+  height: 3rem;
+  padding-left: 1.5rem;
+  /* Espaço interno */
+  padding-right: 1.5rem;
+  /* Espaço interno */
+  background-color: #c8b6ff;
+  color: #343a40;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  transition: transform 0.15s;
+  /* Animação suave ao passar o mouse */
+}
+
+.botao-acao:hover {
+  transform: scale(1.05);
+  /* Aumenta um pouco no hover */
+}
+
+/*caixa com a imagem, para melhor posicionamento com o display flex*/
+.coluna-imagem {
+  width: 100%;
+}
+
+.imagem-inicial {
+  width: 100%;
+  border-radius: 0.5rem;
+  /* Cantos arredondados */
+  background-position: center;
+  background-size: cover;
+  /* Cobre todo o espaço */
+}
+
+/*caixa para alinhar o texto de burnout*/
+.secao-texto {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+/*o que é burnout + texto*/
+.caixa-texto {
+  max-width: 48rem;
+  margin-left: auto;
+  /* Centraliza horizontalmente */
+  margin-right: auto;
+  /* Centraliza horizontalmente */
+}
+
+.titulo-secao {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #343a40;
+  padding-bottom: 1rem;
+}
+
+.texto-secao {
+  font-size: 1rem;
+  /* Tamanho padrão */
+  font-weight: 400;
+  /* Peso normal */
+  line-height: 1.625;
+  /* Texto confortável */
+  color: rgba(52, 58, 64, 0.8);
+  /* Texto mais suave */
+}
+
+/* --------- RESPONSIVIDADE --------- */
+@media (min-width: 1024px) {
+  .caixa-inicial {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .coluna-texto {
+    text-align: left;
+    width: 50%;
+  }
+
+  .botao-acao {
+    align-self: flex-start;
+  }
+
+  .coluna-imagem {
+    width: 50%;
+  }
+
+  .titulo-principal {
+    font-size: 3.75rem;
+  }
+}

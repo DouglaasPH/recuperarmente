@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Crie sua Conta - RecuperaMente</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="configuracoes-globais.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <main class="main-container">
+        <div class="auth-wrapper">
+          <div class="auth-card">
+            <div class="auth-header">
+              <h1 class="auth-title">
+                Comece sua jornada de equilíbrio e produtividade.
+              </h1>
+              <p class="auth-subtitle">
+                Crie sua conta e personalize seu calendário de recuperação.
+              </p>
+            </div>
+            <form class="auth-form">
+              <div class="form-fields">
+                <label class="form-group">
+                  <p class="input-label">Nome completo</p>
+                  <input
+                    class="form-input input-nome-completo"
+                    placeholder="Digite seu nome completo"
+                    type="text"
+                    value=""
+                  />
+                </label>
+
+                <label class="form-group">
+                  <p class="input-label">E-mail</p>
+                  <input
+                    class="form-input input-email"
+                    placeholder="seu.email@exemplo.com"
+                    type="email"
+                    value=""
+                  />
+                </label>
+                <label class="form-group">
+                  <p class="input-label">Senha</p>
+                  <div class="password-input-wrapper">
+                    <input
+                      class="form-input with-icon input-senha"
+                      placeholder="Mínimo de 6 caracteres"
+                      type="password"
+                      value=""
+                    />
+                    <button class="toggle-visibility-btn" type="button">
+                      <img
+                        src="./assets/icone-de-visibilidade-on.svg"
+                        alt="icone de visibilidade"
+                        class="icone-de-visibilidade"
+                      />
+                    </button>
+                  </div>
+                </label>
+              </div>
+              <button class="submit-btn">
+                <span class="btn-text">Criar conta</span>
+              </button>
+              <p class="footer-text">
+                Já tem uma conta?
+                <a class="footer-link" href="/conectar/index.html">Entrar</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

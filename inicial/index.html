@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Inicial - RecuperaMente</title>
+  <link rel="icon" type="image/png" href="../public/logo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style/configuracoes-globais.css" />
+  <link rel="stylesheet" href="./style/navbar-jaldson.css" />
+  <link rel="stylesheet" href="./style/secao-arthur.css" />
+  <link rel="stylesheet" href="./style/secao-douglas.css" />
+  <link rel="stylesheet" href="./style/footer-douglas.css" />
+</head>
+
+<body>
+  <div class="div-pagina">
+    <div class="div-layout">
+      <!--primeira classe: define o container geral-->
+      <div class="pg-wrap">
+        <!--segunda classe: ajuda na organização do layout-->
+        <div class="lay-cont">
+          <!--NAVBAR, RESPONSÁVEL: JALDSON-->
+          <!--terceira classe: define o cabeçalho do site-->
+          <header class="site-hd">
+            <!--quarta classe: ajuda a definir o conteúdo interno do cabeçalho-->
+            <div class="hd-intern">
+              <!--quinta classe: ajuda a manter a logo e o nome juntos-->
+              <div class="logo-cont">
+                <!--sexta classe: ajuda a organizar e agrupar o ícone svg da logo -->
+                <div class="logo-icon">
+                  <!--sétima classe: ajuda a definir o ícone vetorial da marca-->
+                  <img src="/public/logo.png" alt="logo icon">
+                </div>
+                <!--oitava classe: ajuda a organizar e agrupar o texto da logo -->
+                <h2 class="logo-text">RecuperaMente</h2>
+              </div>
+              <!--nona classe: ajuda a organizar e agrupar o menu de navegação -->
+              <nav class="desk-nav">
+                <!--décima classe: ajuda a organizar e agrupar os links de navegação -->
+                <a class="nav-link" href="/index.html">Início</a>
+                <a class="nav-link" href="/sobre-nos/index.html">Sobre Nós</a>
+              </nav>
+              <!--décima primeira classe: ajuda a organizar e agrupar os botões de ação -->
+              <div class="btn-prim-sec">
+                <a class="btn-primary" href="/conectar/index.html">Conecte-se</a>
+                <a class="btn-secondary" href="/cadastar/index.html">Cadastre-se</a>
+              </div>
+              <!--décima segunda classe: ajuda a organizar a responsividade dos botões em telas menores-->
+              <button class="btn-menu" id="menuBtn">
+                <img src="/public/menuHamburg.svg" alt="hamburguer icon">
+              </button>
+            </div>
+            <!--décima terceira classe: ajuda a organizar o menu de navegação pra mobile -->
+            <nav class="mob-nav" id="mobileNav">
+              <a class="nav-link" href="inicial/index.html">Início</a>
+              <a class="nav-link" href="/sobre-nos/index.html">Sobre Nós</a>
+              <a class="nav-link" href="/contato/index.html">Contato</a>
+              <a class="nav-link" href="/politica-de-privacidade/index.html">Política de Privacidade</a>
+              <div
+                style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-end; width: 100%;">
+                <a class="btn-primary" href="/conectar/index.html"
+                  style="justify-content: center; width: 100%; max-width: 200px;" href="/conectar/index.html">Conecte-se</a>
+                <a class="btn-secondary" href="/cadastrar/index.html"
+                  style="justify-content: center; width: 100%; max-width: 200px;" href="/cadastrar/index.html">Cadastre-se</a>
+              </div>
+            </nav>
+            </nav>
+          </header>
+
+          <!-- RESPONSÁVEL: TEIXEIRA - PRIMEIRA SEÇÃO PRINCIPAL -->
+          <main class="conteudo-principal">
+            <div class="caixa-conteudo">
+
+              <section class="secao-inicial">
+                <div class="caixa-inicial">
+                  <div class="coluna-texto">
+                    <div class="caixa-titulos">
+                      <h1 class="titulo-principal">
+                        Recupere sua energia e vença o cansaço acadêmico.
+                      </h1>
+                      <h2 class="subtitulo-principal">
+                        Crie um calendário de recuperação personalizado com pausas
+                        inteligentes para estudar com mais equilíbrio e bem-estar.
+                      </h2>
+                    </div>
+                    <button class="botao-acao">
+                      <span class="cortar-texto">Começar meu calendário</span>
+                    </button>
+                  </div>
+
+                  <div class="coluna-imagem">
+                    <img src="assets/img-inicial.png" alt="imagem-inicial" class="imagem-inicial">
+                  </div>
+                </div>
+              </section>
+
+              <section class="secao-texto">
+                <div class="caixa-texto">
+                  <h2 class="titulo-secao">
+                    O que é burnout acadêmico?
+                  </h2>
+                  <p class="texto-secao">
+                    Maslach e Leiter (2016) explicam que o burnout acadêmico é uma resposta 
+                    prolongada a estressores interpessoais crônicos no ambiente de trabalho e acadêmico.
+                    Essa condição se manifesta por três pilares centrais: exaustão emocional,
+                    despersonalização e baixa realização profissional.
+                    O burnout acadêmico é um estado de exaustão emocional, física
+                    e mental causado pelo estresse prolongado relacionado aos
+                    estudos. Ele se manifesta através de sentimentos de
+                    esgotamento, cinismo em relação às atividades acadêmicas e uma
+                    sensação de ineficácia, impactando negativamente o desempenho
+                    e o bem-estar do estudante.
+                  </p>
+                </div>
+              </section>
+
+                          <section class="sec-como-funciona">
+              <div class="sec-como-funciona-cabecalho">
+                <h2 class="sec-como-funciona-cabecalho-titulo">
+                  Como funciona?
+                </h2>
+                <p class="sec-como-funciona-cabecalho-paragrafo max-w-body">
+                  Cuidar da sua saúde mental nunca foi tão simples. Siga estes
+                  passos para criar um plano que funciona para você.
+                </p>
+              </div>
+              <div class="todos-cards-container">
+                <div class="card">
+                  <div class="icone-container secondary">
+                    <img src="./assets/icone-timer.svg" alt="icone timer" />
+                  </div>
+                  <h3 class="card-titulo">Pausas Inteligentes</h3>
+                  <p class="card-paragrafo">
+                    Integramos pausas estratégicas em seu cronograma para
+                    maximizar a retenção de informações e prevenir o
+                    esgotamento.
+                  </p>
+                </div>
+                <div class="card">
+                  <div class="icone-container primary">
+                    <img
+                      src="./assets/icone-calendario.svg"
+                      alt="icone calendario"
+                    />
+                  </div>
+                  <h3 class="card-titulo">Calendário Flexível</h3>
+                  <p class="card-paragrafo">
+                    Crie e ajuste seu calendário de estudos facilmente,
+                    adaptando-o à sua rotina e necessidades pessoais para um
+                    aprendizado sem estresse.
+                  </p>
+                </div>
+                <div class="card">
+                  <div class="icone-container secondary">
+                    <img src="./assets/icone-pessoa.svg" alt="icone pessoa" />
+                  </div>
+                  <h3 class="card-titulo">Dicas de Bem-Estar</h3>
+                  <p class="card-paragrafo">
+                    Receba dicas práticas sobre mindfulness, exercícios e
+                    técnicas de relaxamento para apoiar sua saúde mental durante
+                    os estudos.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- RESPONSÁVEL: DOUGLAS - FOOTER -->
+      <footer class="footer">
+        <div class="footer-div">
+          <p class="footer-p-copyright">
+            © 2025 RecuperaMente. Todos os direitos reservados.
+          </p>
+          <div class="footer-links">
+            <a class="footer-link" href="/contato">Contato</a>
+            <a class="footer-link" href="/politica-de-privacidade">Política de Privacidade</a>
+            <a class="footer-link" href="/termos-de-uso">Termos de Uso</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="/Js/script.js"></script>
+</body>
+</html>

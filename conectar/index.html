@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Conectar - RecuperaMente</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./configuracoes-globais.css" />
+  </head>
+  <body>
+    <!--secao forms, responsável: Jaldson-->
+    <!--aqui é a div geral, usada pra englobar as demais-->
+    <div class="container-pagina">
+      <!--aqui é feito o isolamento da área de login do resto da página-->
+      <main class="envo-login">
+        <!--aqui representa o cartão visual onde o usuário interage-->
+        <div class="card-login">
+          <!--aqui é feito o agrupamento do cabeçalho e o formulário e separando do rodape-->
+          <!--onde fica o 'criar conta'-->
+          <div class="card-conteudo">
+            <!--aqui contém apenas o titulo e subtitulo-->
+            <div class="card-header">
+              <h1 class="app-titu">RecuperaMente</h1>
+              <p class="app-subtitu">
+                Bem-vindo(a) de volta! Acesse sua conta.
+              </p>
+            </div>
+            <form class="login-forms">
+              <!--aqui é feito o agrupamento dos campos de entrada (email e senha)-->
+              <div class="forms-campos">
+                <label class="campos-rotulos">
+                  <p class="rotulos-texto">E-mail ou Usuário</p>
+
+                  <!--aqui é a "caixa que envolve o ícone e o input"-->
+                  <div class="envo-input">
+                    <img
+                      src="./assets/icone-de-email.svg"
+                      alt="icone de email"
+                      class="icon-left"
+                    />
+                    <input
+                      class="forms-input"
+                      placeholder="Digite seu e-mail ou usuário"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                </label>
+                <label class="forms-campos">
+                  <p class="campos-rotulos">Senha</p>
+                  <div class="envo-input">
+                    <img
+                      src="./assets/icone-de-senha.svg"
+                      alt="icone de senha"
+                      class="icon-left"
+                    />
+                    <input
+                      class="forms-input with-action"
+                      placeholder="Digite sua senha"
+                      type="password"
+                      value=""
+                    />
+
+                    <button class="botao-ativar-visibilidade" type="button">
+                      <img
+                        src="./assets/icone-de-visibilidade-on.svg"
+                        alt="icone de visibilidade"
+                        class="icone-de-visibilidade"
+                      />
+                    </button>
+                  </div>
+                </label>
+              </div>
+              <button class="botao-enviar" type="button">
+                <span class="cortar">Entrar</span>
+              </button>
+            </form>
+          </div>
+
+          <!--aqui é a parte inferior do cartão que fica separada visualmente-->
+          <div class="rodape-card">
+            <p class="rodape-texto">
+              Ainda não tem uma conta?
+              <a class="link-cadastrar" href="/cadastrar/index.html"
+                >Cadastar conta</a
+              >
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
