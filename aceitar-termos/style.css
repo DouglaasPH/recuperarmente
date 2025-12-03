@@ -1,385 +1,318 @@
 /*CONFIGURAÇÕES GLOBAIS*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #ffffff;
-    color: #2d3748;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #2d3748;
 }
 
 /*página inteira*/
 .estrutura-pagina {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 /*header e main*/
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*container do main, para alinhamento*/
 .container-conteudo {
-    max-width: 48rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  max-width: 48rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /*main*/
 .pilha-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (min-width: 640px) {
-    .container-conteudo {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-}
-
-/* Header */
-.cabecalho-app {
-    width: 100%; /* largura total do cabeçalho */
-    background-color: #ffffffcc;
-}
-
-.conteudo-cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;/*espaço entre o texto e o btn*/
-    white-space: nowrap;/* impede quebra de texto dentro do cabeçalho */
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-
-/*Logo + "RecuperaMente"*/
-.grupo-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: #2d3748;
-}
-
-/*config icone*/
-.icone-logo {
-    color: #c8a2ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/*config icone*/
-.svg-icone {
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-
-.texto-logo {
-    font-size: 1.125rem;
-    font-weight: 700;
-}
-
-.botao-voltar {
-    display: flex;
-    min-width: 84px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    height: 2.5rem;
-    padding: 1rem;
-    background-color: #7347b233;
-    color: #7840c6;
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1.5;
-    transition: background-color 0.15s;
-    border: none;
-}
-
-.botao-voltar:hover {
-    background-color: rgba(200, 162, 255, 0.3);
-    /* altera fundo quando o botão é hover */
+  .container-conteudo {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 /* Seção título e subtítulo */
 .cabecalho-pagina {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
 }
 
 .titulo-pagina {
-    color: #2d3748;
-    font-size: 1.875rem;
-    font-weight: 900;
+  color: #2d3748;
+  font-size: 1.875rem;
+  font-weight: 900;
 }
 
 .subtitulo-pagina {
-    color: #a0aec0;
-    font-size: 1rem;
-    font-weight: 400;
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
+  color: #a0aec0;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 640px) {
-    .titulo-pagina {
-        font-size: 2.25rem;
-    }
+  .titulo-pagina {
+    font-size: 2.25rem;
+  }
 }
 
 /* Caixa de termos (scroll) */
 .caixa-termos {
-    height: 20rem;
-    overflow-y: auto;/* habilita rolagem vertical */
-    border-radius: 0.75rem;
-    border: 1px solid #e5e7eb;
-    background-color: #f7f9ff;
-    padding: 1.5rem;
+  height: 20rem;
+  overflow-y: auto; /* habilita rolagem vertical */
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  background-color: #f7f9ff;
+  padding: 1.5rem;
 }
 
 /* Tamanho da Barra de Rolagem */
 .caixa-termos::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 /* Fundo da barra de rolagem */
 .caixa-termos::-webkit-scrollbar-track {
-    background: #e8edff;
-    border-radius: 10px;
+  background: #e8edff;
+  border-radius: 10px;
 }
 
 /* Barra de rolagem */
 .caixa-termos::-webkit-scrollbar-thumb {
-    background: #c8a2ff;
-    border-radius: 10px;
-    /* arredonda polegar da scrollbar */
+  background: #c8a2ff;
+  border-radius: 10px;
+  /* arredonda polegar da scrollbar */
 }
 
 .caixa-termos::-webkit-scrollbar-thumb:hover {
-    background: #a5b8ff; /* cor da ao passar o mouse */
+  background: #a5b8ff; /* cor da ao passar o mouse */
 }
 
 /* Textos da caixa com termos */
 .conteudo-termos {
-    color: #2d3748;
-    font-size: 0.875rem;
+  color: #2d3748;
+  font-size: 0.875rem;
 }
 
-
 .titulo-secao-termos {
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1em;
 }
 
 .texto-termos {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Checkbox */
 .container-checkbox {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .rotulo-checkbox {
-    display: flex;
-    /* usa flexbox para rotular o checkbox e texto */
-    cursor: pointer;
-    /* cursor pointer para indicar que o rótulo é clicável */
-    align-items: center;
-    /* alinha verticalmente itens do rótulo */
-    column-gap: 0.75rem;
-    /* espaço horizontal entre checkbox e texto */
-    padding-top: 0.75rem;
-    /* padding superior do rótulo */
-    padding-bottom: 0.75rem;
-    /* padding inferior do rótulo */
+  display: flex;
+  /* usa flexbox para rotular o checkbox e texto */
+  cursor: pointer;
+  /* cursor pointer para indicar que o rótulo é clicável */
+  align-items: center;
+  /* alinha verticalmente itens do rótulo */
+  column-gap: 0.75rem;
+  /* espaço horizontal entre checkbox e texto */
+  padding-top: 0.75rem;
+  /* padding superior do rótulo */
+  padding-bottom: 0.75rem;
+  /* padding inferior do rótulo */
 }
 
 /* Estilo customizado para o checkbox */
 .checkbox-personalizado {
-    appearance: none;
-    /* remove aparência padrão do input */
-    -webkit-appearance: none;
-    /* remove aparência padrão no WebKit */
-    height: 1.25rem;
-    /* altura do checkbox personalizado */
-    width: 1.25rem;
-    /* largura do checkbox personalizado */
-    border-radius: 0.375rem;
-    /* bordas arredondadas do checkbox */
-    border: 2px solid #d1d5db;
-    /* borda do checkbox */
-    background-color: transparent;
-    /* fundo transparente por padrão */
-    color: #c8a2ff;
-    /* cor usada para estados ativos */
-    cursor: pointer;
-    /* cursor pointer indicando clicável */
-    display: inline-block;
-    /* exibe como inline-block para alinhamento */
-    vertical-align: middle;
-    /* alinha verticalmente em linha de texto */
-    background-origin: border-box;
-    /* origem do background definida como border-box */
-    user-select: none;
-    /* impede seleção do elemento ao clicar */
-    flex-shrink: 0;
-    /* impede encolhimento em containers flexíveis */
-    transition: background-color 0.1s, border-color 0.1s;
-    /* transição suave para mudanças visuais */
+  appearance: none;
+  /* remove aparência padrão do input */
+  -webkit-appearance: none;
+  /* remove aparência padrão no WebKit */
+  height: 1.25rem;
+  /* altura do checkbox personalizado */
+  width: 1.25rem;
+  /* largura do checkbox personalizado */
+  border-radius: 0.375rem;
+  /* bordas arredondadas do checkbox */
+  border: 2px solid #d1d5db;
+  /* borda do checkbox */
+  background-color: transparent;
+  /* fundo transparente por padrão */
+  color: #c8a2ff;
+  /* cor usada para estados ativos */
+  cursor: pointer;
+  /* cursor pointer indicando clicável */
+  display: inline-block;
+  /* exibe como inline-block para alinhamento */
+  vertical-align: middle;
+  /* alinha verticalmente em linha de texto */
+  background-origin: border-box;
+  /* origem do background definida como border-box */
+  user-select: none;
+  /* impede seleção do elemento ao clicar */
+  flex-shrink: 0;
+  /* impede encolhimento em containers flexíveis */
+  transition: background-color 0.1s, border-color 0.1s;
+  /* transição suave para mudanças visuais */
 }
 
 /* Checked state SVG background */
 .checkbox-personalizado:checked {
-    border-color: #c8a2ff;
-    /* altera cor da borda quando marcado */
-    background-color: #c8a2ff;
-    /* altera fundo quando marcado */
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-    /* ícone de check em SVG como background */
-    background-size: 100% 100%;
-    /* ajusta tamanho do background para preencher */
-    background-position: center;
-    /* centraliza o ícone de check */
-    background-repeat: no-repeat;
-    /* evita repetição do ícone */
+  border-color: #c8a2ff;
+  /* altera cor da borda quando marcado */
+  background-color: #c8a2ff;
+  /* altera fundo quando marcado */
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  /* ícone de check em SVG como background */
+  background-size: 100% 100%;
+  /* ajusta tamanho do background para preencher */
+  background-position: center;
+  /* centraliza o ícone de check */
+  background-repeat: no-repeat;
+  /* evita repetição do ícone */
 }
 
 .checkbox-personalizado:focus {
-    outline: 2px solid transparent;
-    /* remove outline padrão e aplica offset */
-    outline-offset: 2px;
-    /* distância do outline em relação ao elemento */
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(200, 162, 255, 0.5);
-    /* sombra para indicar foco */
+  outline: 2px solid transparent;
+  /* remove outline padrão e aplica offset */
+  outline-offset: 2px;
+  /* distância do outline em relação ao elemento */
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(200, 162, 255, 0.5);
+  /* sombra para indicar foco */
 }
 
 .texto-checkbox {
-    color: #2d3748;
-    /* cor do texto do rótulo do checkbox */
-    font-size: 0.875rem;
-    /* tamanho da fonte do texto do checkbox */
-    font-weight: 400;
-    /* peso normal do texto do checkbox */
-    line-height: 1.5;
-    /* altura de linha para o texto do checkbox */
+  color: #2d3748;
+  /* cor do texto do rótulo do checkbox */
+  font-size: 0.875rem;
+  /* tamanho da fonte do texto do checkbox */
+  font-weight: 400;
+  /* peso normal do texto do checkbox */
+  line-height: 1.5;
+  /* altura de linha para o texto do checkbox */
 }
 
 /* Botões de ação */
 .grupo-botoes {
-    display: flex;
-    /* usa flexbox para agrupar botões */
-    flex-direction: column-reverse;
-    /* ordena botões em coluna invertida por padrão */
-    align-items: center;
-    /* centraliza botões horizontalmente */
-    justify-content: center;
-    /* centraliza botões verticalmente */
-    gap: 0.75rem;
-    /* espaço entre os botões */
-    padding-top: 1rem;
-    /* padding superior do grupo de botões */
+  display: flex;
+  /* usa flexbox para agrupar botões */
+  flex-direction: column-reverse;
+  /* ordena botões em coluna invertida por padrão */
+  align-items: center;
+  /* centraliza botões horizontalmente */
+  justify-content: center;
+  /* centraliza botões verticalmente */
+  gap: 0.75rem;
+  /* espaço entre os botões */
+  padding-top: 1rem;
+  /* padding superior do grupo de botões */
 }
 
 @media (min-width: 640px) {
-    .grupo-botoes {
-        flex-direction: row;
-        /* em telas maiores, botões ficam em linha */
-    }
+  .grupo-botoes {
+    flex-direction: row;
+    /* em telas maiores, botões ficam em linha */
+  }
 }
 
 .botao-cancelar,
 .botao-continuar {
-    display: flex;
-    /* exibe botão como flex para alinhar conteúdo */
-    width: 100%;
-    /* largura total por padrão em telas pequenas */
-    min-width: 84px;
-    /* largura mínima do botão */
-    cursor: pointer;
-    /* cursor pointer para indicar clicável */
-    align-items: center;
-    /* centraliza conteúdo verticalmente */
-    justify-content: center;
-    /* centraliza conteúdo horizontalmente */
-    overflow: hidden;
-    /* esconde overflow interno */
-    border-radius: 0.75rem;
-    /* arredonda cantos dos botões */
-    height: 3rem;
-    /* altura fixa dos botões */
-    padding-left: 1.25rem;
-    /* padding esquerdo dos botões */
-    padding-right: 1.25rem;
-    /* padding direito dos botões */
-    font-size: 1rem;
-    /* tamanho da fonte dos botões */
-    font-weight: 700;
-    /* peso em negrito dos botões */
-    line-height: 1.5;
-    /* altura de linha dos botões */
-    letter-spacing: 0.015em;
-    /* ajuste fino do espaçamento entre letras */
-    border: none;
-    /* remove borda padrão do botão */
-    transition: all 0.15s ease-in-out;
-    /* transição suave para mudanças visuais */
+  display: flex;
+  /* exibe botão como flex para alinhar conteúdo */
+  width: 100%;
+  /* largura total por padrão em telas pequenas */
+  min-width: 84px;
+  /* largura mínima do botão */
+  cursor: pointer;
+  /* cursor pointer para indicar clicável */
+  align-items: center;
+  /* centraliza conteúdo verticalmente */
+  justify-content: center;
+  /* centraliza conteúdo horizontalmente */
+  overflow: hidden;
+  /* esconde overflow interno */
+  border-radius: 0.75rem;
+  /* arredonda cantos dos botões */
+  height: 3rem;
+  /* altura fixa dos botões */
+  padding-left: 1.25rem;
+  /* padding esquerdo dos botões */
+  padding-right: 1.25rem;
+  /* padding direito dos botões */
+  font-size: 1rem;
+  /* tamanho da fonte dos botões */
+  font-weight: 700;
+  /* peso em negrito dos botões */
+  line-height: 1.5;
+  /* altura de linha dos botões */
+  letter-spacing: 0.015em;
+  /* ajuste fino do espaçamento entre letras */
+  border: none;
+  /* remove borda padrão do botão */
+  transition: all 0.15s ease-in-out;
+  /* transição suave para mudanças visuais */
 }
 
 @media (min-width: 640px) {
-
-    .botao-cancelar,
-    .botao-continuar {
-        width: auto;
-        /* em telas maiores, largura volta ao automático */
-    }
+  .botao-cancelar,
+  .botao-continuar {
+    width: auto;
+    /* em telas maiores, largura volta ao automático */
+  }
 }
 
 .texto-truncado {
-    overflow: hidden;
-    /* esconde texto que ultrapassa o contêiner */
-    text-overflow: ellipsis;
-    /* adiciona reticências quando texto é cortado */
-    white-space: nowrap;
-    /* impede quebra de linha no texto */
+  overflow: hidden;
+  /* esconde texto que ultrapassa o contêiner */
+  text-overflow: ellipsis;
+  /* adiciona reticências quando texto é cortado */
+  white-space: nowrap;
+  /* impede quebra de linha no texto */
 }
 
 .botao-cancelar {
-    background-color: #f3f4f6;
-    /* cor de fundo do botão cancelar */
-    color: #2d3748;
-    /* cor do texto do botão cancelar */
+  background-color: #f3f4f6;
+  /* cor de fundo do botão cancelar */
+  color: #2d3748;
+  /* cor do texto do botão cancelar */
 }
 
 .botao-cancelar:hover {
-    background-color: #e5e7eb;
+  background-color: #e5e7eb;
 }
 
 .botao-continuar {
-    background-color: #c8a2ff;
-    color: #ffffff;
+  background-color: #c8a2ff;
+  color: #ffffff;
 }
 
 /* Estado desabilitado do botão continuar */
 .botao-continuar:disabled {
-    opacity: 0.5;
-    /* reduz opacidade quando desabilitado */
-    cursor: not-allowed;
-    /* cursor indica que não é clicável */
+  opacity: 0.5;
+  /* reduz opacidade quando desabilitado */
+  cursor: not-allowed;
+  /* cursor indica que não é clicável */
 }

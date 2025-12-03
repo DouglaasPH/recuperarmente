@@ -26,6 +26,7 @@ buttonEnviar.addEventListener("click", (e) => {
     localStorage.setItem("nome-completo", nomeCompleto);
     localStorage.setItem("email", email);
     localStorage.setItem("senha", senha);
+    console.log(nomeCompleto, email, senha);
 
     window.location.href = "/aceitar-termos/index.html";
   }
