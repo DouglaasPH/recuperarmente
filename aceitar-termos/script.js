@@ -1,22 +1,19 @@
 const checkbox = document.getElementById("checkbox-termos");
- // seleciona o input checkbox pelo id
-const continueButton = document.getElementById("botao-continuar"); // seleciona o botão continuar pelo id
 
-function checarBotao() { // função que alterna estado do botão de continuar
-    if (checkbox.checked) { // verifica se o checkbox está marcado
+const continueButton = document.getElementById("botao-continuar");
+
+function checarBotao() {
+    if (checkbox.checked) {
         continueButton.disabled = false; // habilita o botão continuar
     } else { // caso o checkbox não esteja marcado
         continueButton.disabled = true; // desabilita o botão continuar
     }
-} // fim da função toggleButtonState
+}
 
 checkbox.addEventListener("change", checarBotao); // adiciona listener para mudança no checkbox e chama a função
-
-continueButton.addEventListener("click", cadastrar);
-// Initial state
 checarBotao(); // executa a função ao carregar para garantir estado inicial correto
 
-// Esta função será chamada quando quisermos cadastrar um usuário
+// Esta função será chamada quando o usuário aceitar o termos
 async function cadastrar() {
 
     // Aqui pegamos do navegador os dados que estavam guardados previamente
@@ -25,13 +22,12 @@ async function cadastrar() {
     const email = localStorage.getItem('email')
     const senha = localStorage.getItem('senha')
 
-    // Aqui juntamos os 3 dados dentro de um único objeto
-    // Esse objeto será enviado para o servidor
+    // Aqui juntamos os 3 dados dentro de um único objeto e esse objeto será enviado para o servidor
     const dados = { nome, email, senha }
 
     try {
-        // Aqui fazemos uma requisição POST para o backend (FastAPI)
-        // Isso serve para enviar os dados do usuário para serem cadastrados no banco
+        // "fetch" faz uma requisição HTTP para o endereço URL do endpoint de cadastro
+        // await faz o código esperar a resposta do servidor antes de continuar
         const resposta = await fetch("http://localhost:8000/cadastrar", {
             // Informamos que a requisição é do tipo POST (enviar dados)
             method: "POST",
@@ -45,7 +41,7 @@ async function cadastrar() {
             body: JSON.stringify(dados)
         });
 
-        // Apenas exibimos no console os dados enviados (para conferência)
+        // Apenas exibimos no console os dados enviados (para conferir se está correto)
         console.log(dados);
 
     } catch (erro) {
@@ -54,3 +50,4 @@ async function cadastrar() {
     }
 }
 
+continueButton.addEventListener("click", cadastrar); // evento de cadastrar o usuário quando clicar no botão continuar
