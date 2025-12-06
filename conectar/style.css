@@ -1,8 +1,9 @@
+/*estilização da div que engloba o conteúdo do card etc*/
 .envo-login {
   width: 100%;
   max-width: 28rem;
 }
-
+/*estilização do card da área de login*/
 .card-login {
   display: flex;
   flex-direction: column;
@@ -12,17 +13,19 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/*espaçamento interno do card*/
 .card-conteudo {
   padding: 2rem;
 }
 
+/*estilização do cabeçalho do card*/
 .card-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-
+/*estilização do titulo*/
 .app-titu {
   color: #111218;
   font-size: 1.875rem;
@@ -31,31 +34,32 @@
   text-align: center;
   letter-spacing: -0.025em;
 }
-
+/*estilização do subtitulo*/
 .app-subtitu {
   text-align: center;
   color: #6b7280;
   font-size: 1rem;
 }
 
+/*estilização da área do formulário*/
 .login-forms {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
+/*estilização dos campos do formulário*/
 .forms-campos {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
+/*estilização dos campos dos rótulos do formulário*/
 .campos-rotulos {
   display: flex;
   flex-direction: column;
 }
-
+/*estilização dos rótulos do formulário*/
 .rotulos-texto {
   color: #111218;
   font-size: 0.875rem;
@@ -63,7 +67,8 @@
   line-height: 1.5;
   padding-bottom: 0.5rem;
 }
-
+/*estilização da parte que contem os espaços para inserir as
+informações*/
 .envo-input {
   position: relative;
   display: flex;
@@ -71,6 +76,7 @@
   width: 100%;
 }
 
+/*estilização dos ícones*/
 .icon-left {
   position: absolute;
   left: 1rem;
@@ -78,7 +84,7 @@
   font-size: 1.5rem;
   pointer-events: none;
 }
-
+/*estilização base dos inputs do formulario*/
 .forms-input {
   display: flex;
   height: 3rem;
@@ -99,20 +105,20 @@
   transition: box-shadow 0.15s;
   outline: none;
 }
-
+/*ajuste do padding para inputs que possuem botoes internos como: ver senha*/
 .forms-input.with-action {
   padding-right: 3rem;
 }
-
+/*estilização do placeholder*/
 .forms-input::placeholder {
   color: #9ca3af;
 }
-
+/*destaque visual quando o usuario clica no input*/
 .forms-input:focus {
   border-color: #c8a2ff;
   box-shadow: 0 0 0 2px #c8a2ff;
 }
-
+/* Botão transparente posicionado dentro do input (olho de ver senha) */
 .botao-ativar-visibilidade {
   position: absolute;
   right: 0;
@@ -129,11 +135,11 @@
   justify-content: center;
   transition: color 0.15s;
 }
-
+/* Muda a cor do ícone de visibilidade ao passar o mouse */
 .botao-ativar-visibilidade:hover {
   color: #c8a2ff;
 }
-
+/* Estilização principal do botão de enviar (cor, sombra e tipografia) */
 .botao-enviar {
   display: flex;
   height: 3rem;
@@ -155,15 +161,15 @@
     0 2px 4px -1px rgba(165, 184, 255, 0.18);
   transition: transform 0.15s;
 }
-
+/* Muda a cor do ícone de visibilidade ao passar o mouse */
 .botao-enviar:hover {
   transform: scale(1.05);
 }
-
+/* Retorna o botão ao tamanho normal durante o clique */
 .botao-enviar:active {
   transform: scale(1);
 }
-
+/* Container do rodapé do card (fundo cinza claro e bordas arredondadas embaixo) */
 .rodape-card {
   display: flex;
   align-items: center;
@@ -175,22 +181,22 @@
   padding: 1rem;
   text-align: center;
 }
-
+/* Estilo do texto explicativo no rodapé */
 .rodape-texto {
   font-size: 0.875rem;
   color: #4b5563;
 }
-
+/* Estilo do link de ação (ex: Cadastrar-se) */
 .link-cadastrar {
   font-weight: 700;
   color: #c8a2ff;
   text-decoration: none;
 }
-
+/* Adiciona sublinhado ao link quando o mouse passa por cima */
 .link-cadastrar:hover {
   text-decoration: underline;
 }
-
+/* Utilitário para cortar textos longos com reticências (...) */
 .cortar {
   white-space: nowrap;
   overflow: hidden;

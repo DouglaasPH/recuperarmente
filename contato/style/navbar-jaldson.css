@@ -74,7 +74,8 @@ faz alinhamentos, impede quebra de linha etc*/
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-
+/*aqui é feita a estilização do botão primário, como alinhamento de itens e tamanho
+de fonte*/
 .btn-primary {
   display: flex;
   min-width: 84px;
@@ -101,7 +102,8 @@ faz alinhamentos, impede quebra de linha etc*/
 .btn-primary:hover {
   opacity: 0.9;
 }
-
+/*aqui é feita a estilização do botão secundário, como alinhamento de itens e tamanho
+de fonte*/
 .btn-secondary {
   display: flex;
   min-width: 84px;
@@ -124,6 +126,7 @@ faz alinhamentos, impede quebra de linha etc*/
   transition: background-color 0.15s;
   text-decoration: none;
 }
+
 
 .btn-menu {
   display: flex;
@@ -166,17 +169,13 @@ faz alinhamentos, impede quebra de linha etc*/
   display: flex;
 }
 
-/* links do menu mobile */
+/* links estilizados do menu mobile */
 .mob-nav .nav-link {
   padding: 1rem 0;
-  /* Mais espaço para o dedo clicar */
   border-bottom: 1px solid #f3f4f6;
   width: 100%;
-  /* Ocupa a largura toda */
   color: #4b5563;
-  /* Cinza mais suave */
   font-size: 1.1rem;
-  /* Letra um pouco maior */
   font-weight: 500;
   transition: color 0.2s, padding-right 0.2s;
 }
@@ -187,7 +186,7 @@ faz alinhamentos, impede quebra de linha etc*/
   border-bottom-color: #4747eb;
 }
 
-/* aqui nessa sessão é feita a configuração pra diferentes tamanhos de telas
+/* aqui nessa sessão é feita a configuração de responsividade pra diferentes tamanhos de telas
 organizando espaçamentos, alinhamentos, quantidade de colunas etc*/
 @media (min-width: 670px) {
   .logo-cont {
@@ -204,7 +203,6 @@ organizando espaçamentos, alinhamentos, quantidade de colunas etc*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* Isso garante que eles fiquem colados na direita */
     gap: 0.75rem;
     margin-left: 2rem;
   }
@@ -213,7 +211,8 @@ organizando espaçamentos, alinhamentos, quantidade de colunas etc*/
     display: none !important;
   }
 
-  /* botão menu hamburguer */
+  /*definição de responsividade do botão menu hamburguer, passa a
+  aparecer quando atingimos um tamanho inferior a 670px */
   .btn-menu {
     display: none;
   }
