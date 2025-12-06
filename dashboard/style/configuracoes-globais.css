@@ -1,0 +1,66 @@
+/* Variáveis de Cor e Fonte */
+:root {
+  --primary: #92a9fc;
+  --background-light: #f5f6f8;
+  --lilac: #c8a2ff;
+  --light-blue: #a5b8ff;
+  --blue-gray: #e8edff;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  --white: #ffffff;
+  --border-color: rgba(226, 232, 240, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-light);
+  color: var(--slate-800);
+  line-height: 1.5;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.layout-container {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .main-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .dashboard-grid {
+    gap: 2rem;
+  }
+}
