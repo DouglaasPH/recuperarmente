@@ -1,0 +1,96 @@
+/* Seções gerais (texto e cartoes) */
+.secao-intro,
+.secao-time {
+  display: flex;
+  flex-direction: column; /* Organização vertical */
+  gap: 2rem;
+}
+
+
+
+/* Título "conheça a equipe" */
+.titulo-secao {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.25rem 1rem 0.5rem; /* Padding superior, horizontal e inferior */
+  text-align: center;
+  color: #343a40; /* Cor do título */
+}
+
+/* Grid para os cartoes*/
+.grade-time {
+  display: grid; /* Layout em grade */
+  gap: 1.5rem; /* Espaço entre os cards */
+}
+
+/* Card individual de cada membro */
+.cartao-membro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.cartao-membro:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-0.25rem); /* Leve elevação */
+}
+
+/* Wrapper da imagem do membro */
+.caixa-imagem {
+  position: relative;
+  width: 7rem; /* Largura da imagem */
+  height: 7rem; /* Altura da imagem */
+}
+
+/* Foto do perfil */
+.foto-perfil {
+  width: 100%; 
+  height: 100%;
+  border-radius: 9999px;
+  object-fit: cover; /* Corta excesso da imagem mantendo proporção */
+  border: solid 4px #a8d0e680;
+}
+
+/* Informações do membro */
+.info-membro {
+  text-align: center; /* Centraliza texto */
+}
+
+/* Nome do membro */
+.nome-membro {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+/* Cargo do membro */
+.cargo-membro {
+  font-size: 0.875rem; 
+  color: #636388;
+}
+
+/* REPONSIVIDADE DO SITE */
+@media (min-width: 768px) {
+  .grade-time {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .grade-time {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grade-time {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

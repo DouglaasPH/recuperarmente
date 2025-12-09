@@ -1,0 +1,20 @@
+.page-title {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 700;
+    /* font-bold */
+    letter-spacing: -0.025em;
+    /* tracking-tight */
+    line-height: 1.25;
+}
+
+.page-subtitle {
+    margin-top: 0.5rem;
+    /* mt-2 */
+    font-size: 1rem;
+    /* text-base */
+    color: #6b7280;
+    /* text-text-secondary */
+    max-width: 42rem;
+    /* max-w-2xl */
+}

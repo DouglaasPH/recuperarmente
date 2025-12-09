@@ -1,0 +1,227 @@
+
+/* Main Card Area */
+.main-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #ffffff;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 1rem; /* p-4 default */
+}
+
+/* Page Heading */
+.page-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Calendar / Table */
+.calendar-container {
+  padding: 0.75rem 1rem;
+  container-type: inline-size;
+}
+
+.calendar-wrapper {
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid #e8edff;
+  background-color: #ffffff;
+}
+
+.table-scroll {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.calendar-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.calendar-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+
+.col-time {
+  width: 7rem;
+}
+
+.calendar-table tbody tr {
+  border-top: 1px solid #e8edff;
+}
+
+.calendar-table td {
+  height: 88px;
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+.time-cell {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #6b7280; /* gray-500 */
+}
+
+/* Event Cards */
+.event-card {
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.event-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Event Colors */
+.type-study {
+  background-color: rgba(165, 184, 255, 0.2); /* study/20 */
+  color: #1e40af; /* blue-800 */
+}
+
+.type-rest {
+  background-color: rgba(200, 162, 255, 0.2); /* rest/20 */
+  color: #6b21a8; /* purple-800 */
+}
+
+.type-other {
+  background-color: rgba(224, 224, 224, 0.5); /* other/50 */
+  color: #1f2937; /* gray-800 */
+}
+
+/* Floating Action Button */
+.fab-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: #92a9fc;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: opacity 0.15s;
+}
+
+.fab-btn:hover {
+  opacity: 0.9;
+}
+
+.fab-icon {
+  font-size: 1.875rem;
+}
+
+/* Media Queries (Responsividade) */
+
+/* SM Breakpoint (640px) */
+@media (min-width: 640px) {
+  .main-content-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .app-header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .main-card {
+    padding: 1.5rem;
+  }
+
+  .view-toggle {
+    display: flex;
+  }
+
+  .stats-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .fab-btn {
+    display: none;
+  }
+}
+
+/* MD Breakpoint (768px) */
+@media (min-width: 768px) {
+  .main-content-wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .controls-toolbar {
+    flex-direction: row;
+  }
+
+  .action-group {
+    width: auto;
+  }
+
+  .btn-primary {
+    flex: none;
+  }
+}
+
+/* LG Breakpoint (1024px) */
+@media (min-width: 1024px) {
+  .main-content-wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .app-header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .main-card {
+    padding: 2rem;
+  }
+
+  .page-title {
+    font-size: 2.25rem; /* text-4xl */
+  }
+}
+
+/* XL Breakpoint (1280px) */
+@media (min-width: 1280px) {
+  .main-content-wrapper {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}

@@ -1,0 +1,61 @@
+.sec-contato {
+  margin-top: 3rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.sec-contato-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #dcdce5;
+  border-radius: 1.8rem;
+  padding: 2rem;
+}
+
+.sec-contato-card-titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111118;
+}
+
+.sec-contato-card-paragrafo {
+  color: #636388;
+  max-width: 28rem;
+}
+
+.sec-contato-card-botao {
+  margin-top: 1rem;
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  height: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #4747eb;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+
+.sec-contato-card-botao:hover {
+  transform: scale(1.05);
+}
+
+.sec-contato-card-span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

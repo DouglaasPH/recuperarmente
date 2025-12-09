@@ -1,0 +1,110 @@
+/* estilização do grid de conteúdo principal*/
+.main-content-grid {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* estilização do grid dos cards */
+.grid-poli {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* estilização dos Cards */
+.card-poli {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1.8rem;
+  border: 1px solid #dcdce5;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+/*animação ao passar o mouse por cima dos cards*/
+.card-poli:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+  /*estilização do envolucro dos icones*/
+.icon-env {
+  color: #4747eb;
+  background-color: #eff0ff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+  /* tamanho da fonte*/
+.icon-env i {
+  font-size: 24px;
+}
+  /* estilização do conteúdo do card */
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+  /*estilização do titulo do card */
+.card-titu {
+  color: #111118;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+  /*estilização do texto do card */
+.text-card {
+  color: #636388;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* aqui nessa sessão é feita a configuração pra diferentes tamanhos de telas
+organizando espaçamentos, alinhamentos, quantidade de colunas etc*/
+@media (min-width: 670px) {
+  .logo-cont {
+    flex: 1;
+  }
+
+  .desk-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .btn-prim-sec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-left: 2rem;
+  }
+
+  .mob-nav {
+    display: none !important;
+  }
+
+  /* botão menu hamburguer */
+  .btn-menu {
+    display: none;
+  }
+}
+
+/* Media Queries (Responsividade) */
+@media (min-width: 640px) {
+  .grid-poli {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

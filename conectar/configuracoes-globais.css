@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-pagina {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, rgba(165, 184, 255, 0.2), #ffffff, rgba(200, 162, 255, 0.2));
+  padding: 1rem; 
+}
+
+
+@media (min-width: 640px) {
+  .container-pagina {
+    padding: 1.5rem; 
+  }
+
+  .card-conteudo {
+    padding: 2.5rem; 
+  }
+
+  .app-titu {
+    font-size: 2.25rem; /
+  }
+}
+
+@media (min-width: 1024px) { 
+  .container-pagina {
+    padding: 2rem; 
+  }
+}

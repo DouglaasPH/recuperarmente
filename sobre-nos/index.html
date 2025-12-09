@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sobre Nós - RecuperaMente</title>
+    <link rel="icon" type="image/png" href="../public/logo.png"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/configuracoes-globais.css"/>
+    <link rel="stylesheet" href="./style/footer-douglas.css"/>
+    <link rel="stylesheet" href="./style/navbar-jaldson.css"/>
+    <link rel="stylesheet" href="./style/secao-como-nasceu-douglas.css"/>
+    <link rel="stylesheet" href="./style/secao-equipe-arthur.css" />
+    <link rel="stylesheet" href="./style/secao-principal-jaldson.css"/>
+  </head>
+
+  <body>
+    <div class="div-pagina">
+      <!--NAVBAR, RESPONSÁVEL: JALDSON-->
+          <!--terceira classe: define o cabeçalho do site-->
+          <header class="site-hd">
+            <!--quarta classe: ajuda a definir o conteúdo interno do cabeçalho-->
+            <div class="hd-intern">
+              <!--quinta classe: ajuda a manter a logo e o nome juntos-->
+              <div class="logo-cont">
+                <!--sexta classe: ajuda a organizar e agrupar o ícone svg da logo -->
+                <div class="logo-icon">
+                  <!--sétima classe: ajuda a definir o ícone vetorial da marca-->
+                  <img src="/public/logo.png" alt="logo icon">
+                </div>
+                <!--oitava classe: ajuda a organizar e agrupar o texto da logo -->
+                <h2 class="logo-text">RecuperaMente</h2>
+              </div>
+              <!--nona classe: ajuda a organizar e agrupar o menu de navegação -->
+              <nav class="desk-nav">
+                <!--décima classe: ajuda a organizar e agrupar os links de navegação -->
+                <a class="nav-link" href="/index.html">Início</a>
+                <a class="nav-link" href="/sobre-nos/index.html">Sobre Nós</a>
+              </nav>
+              <!--décima primeira classe: ajuda a organizar e agrupar os botões de ação -->
+              <div class="btn-prim-sec">
+                <a class="btn-primary" href="/conectar/index.html">Conecte-se</a>
+                <a class="btn-secondary" href="/cadastar/index.html">Cadastre-se</a>
+              </div>
+              <!--décima segunda classe: ajuda a organizar a responsividade dos botões em telas menores-->
+              <button class="btn-menu" id="menuBtn">
+                <img src="/public/menuHamburg.svg" alt="hamburguer icon">
+              </button>
+            </div>
+            <!--décima terceira classe: ajuda a organizar o menu de navegação pra mobile -->
+            <nav class="mob-nav" id="mobileNav">
+              <a class="nav-link" href="inicial/index.html">Início</a>
+              <a class="nav-link" href="/sobre-nos/index.html">Sobre Nós</a>
+              <a class="nav-link" href="/contato/index.html">Contato</a>
+              <a class="nav-link" href="/politica-de-privacidade/index.html">Política de Privacidade</a>
+              <div
+                style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-end; width: 100%;">
+                <a class="btn-primary" href="/conectar/index.html"
+                  style="justify-content: center; width: 100%; max-width: 200px;" href="/conectar/index.html">Conecte-se</a>
+                <a class="btn-secondary" href="/cadastrar/index.html"
+                  style="justify-content: center; width: 100%; max-width: 200px;" href="/cadastrar/index.html">Cadastre-se</a>
+              </div>
+            </nav>
+            </nav>
+          </header>
+
+          <!--aqui é onde começa o conteúdo principal e único da página-->
+      <main class="main-content">
+          <!--aqui é onde o conteúdo é "embrulhado"-->
+        <div class="content-wrapper">
+          <!--aqui a classe serve como uma cerca, ela impede que o texto estique demais 
+          em telas maiores, mantendo o conteúdo centralizado e alinhado-->
+          <div class="content-container">
+            <!--SECÃO PRINCIPAL, RESPONSÁVEL: JALDSON-->
+            <!--aqui é criado o blco visual do cabeçalho dessa seção-->
+            <div class="page-heading">
+              <!--aqui é feito o 'alinhamento', e agruopamento do conteúdo interno 
+              do cabeçalho dessa seção-->
+              <div class="heading-inner">
+                <h1 class="main-title">Nossa História</h1>
+                <p class="main-subtitle">
+                  Saiba mais sobre a equipe por trás da RecuperaMente e nossa missão:
+                    apoiar o bem-estar dos estudantes.
+                </p>
+              </div>
+            </div>
+            <!--aqui é determinada a seção do 'conteúdo secundário' dessa 
+            parte do código-->
+            <section class="sec-como-nasceu">
+              <h2 class="sec-como-nasceu-titulo">
+                Como Nasceu o RecuperarMente
+              </h2>
+              <p class="sec-como-nasceu-paragrafo">
+                O RecuperaMente começou como um projeto no IFPE, nascido de uma
+                paixão compartilhada por ajudar os alunos a lidar com os
+                desafios da vida acadêmica. Nosso objetivo é fornecer uma
+                ferramenta que não apenas auxilie na recuperação do esgotamento,
+                mas também promova uma jornada acadêmica mais saudável e
+                equilibrada.
+              </p>
+            </section>
+
+            <!--RESPONSÁVEL: TEIXEIRA-->
+            <section class="secao-time">
+              <h2 class="titulo-secao">Conheça a Equipe</h2>
+
+              <div class="grade-time">
+                <div class="cartao-membro">
+                  <div class="caixa-imagem borda-azul">
+                    <img
+                      class="foto-perfil"
+                      alt="Douglas Phelipe"
+                      src="assets/img-douglas.jpg"
+                    />
+                  </div>
+                  <div class="info-membro">
+                    <h3 class="nome-membro">Douglas Phelipe</h3>
+                    <p class="cargo-membro">Scrum Master</p>
+                  </div>
+                </div>
+
+                <div class="cartao-membro">
+                  <div class="caixa-imagem borda-lilas">
+                    <img
+                      class="foto-perfil"
+                      alt="Jaldson Arthur"
+                      src="assets/img-jaldson.jpg"
+                    />
+                  </div>
+                  <div class="info-membro">
+                    <h3 class="nome-membro">Jaldson Arthur</h3>
+                    <p class="cargo-membro">Scrum Team</p>
+                  </div>
+                </div>
+
+                <div class="cartao-membro">
+                  <div class="caixa-imagem borda-azul">
+                    <img
+                      class="foto-perfil"
+                      alt="Arthur Teixeira"
+                      src="assets/img-teixeira.jpg"
+                    />
+                  </div>
+                  <div class="info-membro">
+                    <h3 class="nome-membro">Arthur Teixeira</h3>
+                    <p class="cargo-membro">Scrum Team</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-div">
+          <p class="footer-p-copyright">
+            © 2025 RecuperaMente. Todos os direitos reservados.
+          </p>
+
+          <div class="footer-links">
+            <a class="footer-link" href="/contato">Contato</a>
+            <a class="footer-link" href="/politica-de-privacidade"
+              >Política de Privacidade</a
+            >
+            <a class="footer-link" href="/termos-de-uso">Termos de Uso</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script src="/Js/script.js"></script>
+  </body>
+</html>

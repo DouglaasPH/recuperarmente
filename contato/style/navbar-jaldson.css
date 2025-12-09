@@ -1,0 +1,219 @@
+/* aqui faz com que o header fique grudado no topo durante o scroll */
+.site-hd {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(248, 249, 250, 0.8);
+}
+
+/* aqui é o container interno do header, nele a gente centraliza tudo, define largura máxima,
+faz alinhamentos, impede quebra de linha etc*/
+.hd-intern {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+  padding: 1rem 1.5rem;
+}
+
+/* aqui se mantém o ícone com o texto da logo lado a lado com espaçamento*/
+.logo-cont {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #343a40;
+}
+
+/* aqui a gente define o tamamho do svg e a cor*/
+.logo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #c8b6ff;
+}
+
+/* aqui a gente define o tamanho e outros ajustes do espaçamento entre das letras*/
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+/* aqui a gente define o menu destktop como oculto*/
+.desk-nav,
+.btn-prim-sec {
+  display: none;
+}
+
+/* aqui a gente define o estilo dos links*/
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: #c8b6ff;
+}
+
+/* aqui a gente centraliza o conteúdo principal e define a dsitância do topo e base*/
+.main-content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+/*aqui é feita a estilização do botão primário, como alinhamento de itens e tamanho
+de fonte*/
+.btn-primary {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #4747eb;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  border: none;
+  transition: opacity 0.15s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+/*aqui é feita a estilização do botão secundário, como alinhamento de itens e tamanho
+de fonte*/
+.btn-secondary {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #e5e7eb;
+  color: #343a40;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  border: none;
+  transition: background-color 0.15s;
+  text-decoration: none;
+}
+
+
+.btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #e9ecef;
+  color: #343a40;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 40%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.btn-menu:hover {
+  color: #4747eb;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.mob-nav {
+  display: none;
+  /* Começa escondido para não quebrar o layout */
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgba(229, 231, 235, 0.5);
+  width: 100%;
+  align-items: flex-end;
+  text-align: right;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.mob-nav.active {
+  display: flex;
+}
+
+/* links estilizados do menu mobile */
+.mob-nav .nav-link {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  width: 100%;
+  color: #4b5563;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s, padding-right 0.2s;
+}
+
+.mob-nav .nav-link:hover {
+  color: #4747eb;
+  padding-right: 1rem;
+  border-bottom-color: #4747eb;
+}
+
+/* aqui nessa sessão é feita a configuração de responsividade pra diferentes tamanhos de telas
+organizando espaçamentos, alinhamentos, quantidade de colunas etc*/
+@media (min-width: 670px) {
+  .logo-cont {
+    flex: 1;
+  }
+
+  .desk-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .btn-prim-sec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-left: 2rem;
+  }
+
+  .mob-nav {
+    display: none !important;
+  }
+
+  /*definição de responsividade do botão menu hamburguer, passa a
+  aparecer quando atingimos um tamanho inferior a 670px */
+  .btn-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,218 @@
+/* Timer Column */
+.timer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container {
+  position: relative;
+  margin-bottom: 1.5rem; /* mb-6 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 280px;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.glow-effect {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    rgba(165, 184, 255, 0.2) 0%,
+    rgba(200, 162, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.timer-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.timer-track {
+  color: #e5e7eb; /* text-gray-200 */
+}
+
+.progress-ring-circle {
+  color: #a5b8ff; /* text-primary-light (fallback) */
+  stroke: url(#timerGradient); /* Use gradient defined in HTML */
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.timer-display {
+  font-size: 3rem; /* text-5xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.05em; /* tracking-tighter */
+  color: #1f2937;
+  position: relative;
+  z-index: 1;
+}
+
+/* Controls */
+.controls-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.pause-btn {
+  display: flex;
+  height: 3.5rem; /* h-14 */
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem; /* gap-3 */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #a5b8ff; /* bg-primary-light */
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700; /* font-bold */
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(165, 184, 255, 0.4),
+    0 4px 6px -2px rgba(165, 184, 255, 0.2); /* shadow-lg shadow-primary-light/40 */
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+
+.pause-btn:hover {
+  transform: scale(1.05);
+}
+
+.refresh-btn {
+  display: flex;
+  height: 3.5rem; /* h-14 */
+  width: 3.5rem; /* w-14 */
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* rounded-full */
+  background-color: #e5e7eb; /* bg-gray-200 */
+  color: #6b7280; /* text-text-secondary */
+  border: none;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  background-color: #d1d5db; /* hover:bg-gray-300 */
+}
+
+.next-break-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-text-secondary */
+}
+
+.highlight-text {
+  font-weight: 600; /* font-semibold */
+  color: #1f2937;
+}
+
+/* Settings Card */
+.settings-card {
+  margin-top: 2rem; /* mt-8 */
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  border-radius: 0.75rem; /* rounded-xl */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  background-color: #ffffff; /* bg-white */
+  padding: 1.5rem; /* p-6 */
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* gap-4 */
+}
+
+.input-group {
+  display: block;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  color: #1f2937;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+.form-input,
+.form-select {
+  display: block;
+  width: 100%;
+  border-radius: 0.375rem; /* rounded-md */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #a5b8ff; /* focus:border-primary-light */
+  box-shadow: 0 0 0 3px rgba(165, 184, 255, 0.5); /* focus:ring focus:ring-primary-light/50 */
+}
+
+.save-btn {
+  margin-top: 1rem; /* mt-4 */
+  width: 100%;
+  border-radius: 9999px; /* rounded-full */
+  background-color: rgba(165, 184, 255, 0.2); /* bg-primary-light/20 */
+  padding-top: 0.625rem; /* py-2.5 */
+  padding-bottom: 0.625rem;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600; /* font-semibold */
+  color: rgba(165, 184, 255, 0.9); /* text-primary-light/90 */
+  border: none;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: rgba(165, 184, 255, 0.3); /* hover:bg-primary-light/30 */
+}
+
+@media (min-width: 640px) {
+  .timer-container {
+    height: 320px;
+    width: 320px;
+  }
+
+  .timer-display {
+    font-size: 3.75rem;
+  }
+
+  .settings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .timer-column {
+    grid-column: span 2;
+  }
+}

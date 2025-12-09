@@ -1,0 +1,99 @@
+.sec-como-funciona-cabecalho-titulo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: #343a40;
+  padding-bottom: 1rem;
+}
+
+.sec-como-funciona-cabecalho-paragrafo {
+  max-width: 42rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+  color: rgba(52, 58, 64, 0.8);
+}
+
+/* Seção como funciona */
+.sec-como-funciona {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.sec-como-funciona-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.todos-cards-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.icone-container {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.icone-container.secondary {
+  background-color: rgba(162, 210, 255, 0.2);
+  color: #a2d2ff;
+}
+
+.icone-container.primary {
+  background-color: rgba(200, 182, 255, 0.2);
+  color: #c8b6ff;
+}
+
+.card-titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.card-paragrafo {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.625;
+  color: rgba(52, 58, 64, 0.8);
+}
+
+/* Responsive - Media Queries */
+@media (min-width: 640px) {
+  .sec-como-funciona {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .todos-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

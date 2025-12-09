@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Sessão de Foco - RecuperaMente</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style/configuracoes-globais.css" />
+  <link rel="stylesheet" href="./style/cronometro-douglas.css" />
+  <link rel="stylesheet" href="style/cabecalho-teixeira.css" />
+  <link rel="stylesheet" href="style/sugestoes-teixeira.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="brand-link" href="#">
+          <span class="material-symbols-outlined brand-icon">psychology</span>
+          <span class="brand-text">RecuperaMente</span>
+        </a>
+        <a class="back-btn" href="#">
+          <span class="material-symbols-outlined back-icon">arrow_back</span>
+          <span>Voltar ao Dashboard</span>
+        </a>
+      </div>
+    </nav>
+    <main class="main-content">
+      <div class="header-section">
+        <!--RESPONSÁVEL: TEIXEIRA-->
+        <h1 class="page-title">Sessão de Foco</h1>
+        <p class="page-subtitle">
+          Mantenha a concentração no seu tempo de estudo. Faremos pausas para
+          garantir seu bem-estar.
+        </p>
+      </div>
+      <div class="grid-layout">
+        <div class="timer-column">
+          <div class="timer-container">
+            <div class="glow-effect"></div>
+            <svg class="timer-svg" viewBox="0 0 120 120">
+              <circle class="timer-track" cx="60" cy="60" fill="transparent" r="54" stroke="currentColor"
+                stroke-width="8"></circle>
+              <circle class="progress-ring-circle" cx="60" cy="60" fill="transparent" r="54" stroke="currentColor"
+                stroke-dasharray="339.292" stroke-dashoffset="84.823" stroke-linecap="round" stroke-width="8"></circle>
+              <defs>
+                <linearGradient id="timerGradient">
+                  <stop offset="0%" stop-color="#A5B8FF"></stop>
+                  <stop offset="100%" stop-color="#C8A2FF"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="timer-display">01:25:00</span>
+          </div>
+          <div class="controls-row">
+            <button class="pause-btn">
+              <img src="./assets/play-icone.svg" alt="" />
+            </button>
+            <button class="refresh-btn">
+              <img src="./assets/repetir-icone.svg" alt="refresh" />
+            </button>
+          </div>
+          <p class="next-break-text">
+            Sua próxima pausa começa em
+            <span class="highlight-text">25 minutos</span>.
+          </p>
+          <div class="settings-card">
+            <div class="settings-grid">
+              <div class="input-group">
+                <label class="input-label" for="pause-time">Tempo entre pausas (min)</label>
+                <input class="form-input" id="pause-time" type="number" value="25" />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="pause-type">Tipo de pausa preferido</label>
+                <select class="form-select" id="pause-type">
+                  <option>Pausa curta</option>
+                  <option>Pausa longa</option>
+                  <option>Respiro rápido</option>
+                </select>
+              </div>
+            </div>
+            <button class="save-btn">Salvar preferências</button>
+          </div>
+        </div>
+        <div class="suggestions-column">
+          <!--RESPONSÁVEL: TEIXEIRA-->
+          <div class="suggestions-card">
+            <h2 class="suggestions-title">
+              Sugestões para sua próxima pausa
+            </h2>
+            <div class="suggestions-list">
+              <div class="suggestion-item">
+                <div class="suggestion-icon-wrapper blue">
+                  <span class="material-symbols-outlined">self_improvement</span>
+                </div>
+                <div>
+                  <p class="suggestion-text">Alongue-se por 5 minutos.</p>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <div class="suggestion-icon-wrapper green">
+                  <span class="material-symbols-outlined">grass</span>
+                </div>
+                <div>
+                  <p class="suggestion-text">
+                    Olhe pela janela e respire fundo.
+                  </p>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <div class="suggestion-icon-wrapper orange">
+                  <span class="material-symbols-outlined">local_cafe</span>
+                </div>
+                <div>
+                  <p class="suggestion-text">Pegue uma água ou café leve.</p>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <div class="suggestion-icon-wrapper purple">
+                  <span class="material-symbols-outlined">phonelink_off</span>
+                </div>
+                <div>
+                  <p class="suggestion-text">
+                    Desconecte-se das telas por alguns minutos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-container">
+        <p class="footer-quote">
+          "Acredite em você, mas não acredite apenas. Aja."
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script src="./scripts/cronometro-douglas.js"></script>
+</body>
+
+</html>

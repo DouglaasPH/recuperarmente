@@ -1,0 +1,113 @@
+/*caixa do formulário */
+.cartao-formulario {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #0000000d;
+}
+/*formulario*/
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+/*os 3 labels: nome, email e msg*/
+.grupo-label {
+    display: flex;
+    flex-direction: column;
+}
+
+/*texto do label*/
+.texto-label {
+    color: #111118;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem; /* Espaço entre o label e o campo */
+}
+
+/*estilização da caixa de nome, email e msg*/
+.entrada-texto,
+.area-texto {
+    font-family: 'Lucida Sans';
+    display: flex;
+    width: 100%;
+    letter-spacing: 1px;
+    min-width: 0;
+    border-radius: 15px;
+    color: #111118;
+    background-color: #f6f6f8;
+    border: 1px solid #dcdce5;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;/* Remove contorno padrão do navegador(preto)*/
+}
+
+
+.entrada-texto {
+    height: 3.5rem;
+}
+
+.area-texto {
+    min-height: 9rem;
+}
+
+.entrada-texto::placeholder,
+.area-texto::placeholder {
+    color: #636388;
+}
+
+.entrada-texto:focus,
+.area-texto:focus {
+    box-shadow: 0 0 0 2px rgba(71, 71, 235, 0.5);
+    border-color: transparent;/* Remove borda para mostrar mais a sombra */
+}
+
+/*estilização do botao*/
+.botao-enviar {
+    display: flex;/* Centraliza conteúdo interno */
+    min-width: 84px;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;/* Alinha verticalmente */
+    justify-content: center;/* Centraliza horizontalmente */
+    border-radius: 9999px;
+    height: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #4747eb;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    transition: background-color 0.15s; /*transição hover*/
+}
+
+.botao-enviar:hover {
+    background-color: rgba(71, 71, 235, 0.9);
+}
+
+/* Responsividade (Media Queries) */
+@media (min-width: 640px) {
+    .cartao-formulario {
+        padding: 2rem;
+        /* Aumenta o padding em telas maiores */
+    }
+}
+
+@media (min-width: 768px) {
+    .conteudo-principal {
+        padding-top: 6rem;
+        /* Aumenta espaçamento superior */
+        padding-bottom: 6rem;
+        /* Aumenta espaçamento inferior */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grade-contato {
+        gap: 5rem;
+        /* Aumenta o espaço entre as colunas em telas maiores */
+    }
+}

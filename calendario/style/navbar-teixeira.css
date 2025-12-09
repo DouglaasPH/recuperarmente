@@ -1,0 +1,106 @@
+/* Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    border-bottom: 1px solid #e8edff;
+    /* border-light */
+    background-color: #ffffff;
+    /* card-light */
+    padding: 0.75rem 1rem;
+    /* py-3 px-4 */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #333333;
+}
+
+.logo-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #92a9fc;
+    /* primary */
+}
+
+.logo-text {
+    font-size: 1.125rem;
+    /* text-lg */
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+}
+
+/* Navegação Desktop */
+.desktop-nav {
+    display: none;
+    /* Hidden by default on mobile */
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    /* gap-9 */
+}
+
+.nav-link {
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    line-height: 1.5;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.nav-link:hover {
+    color: #92a9fc;
+}
+
+.user-avatar-btn {
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9999px;
+    background-color: #e8edff;
+    /* border-light */
+    color: #333333;
+    border: none;
+}
+
+.avatar-icon {
+    font-size: 1.25rem;
+}
+
+.mobile-menu-btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.mobile-menu-btn:hover {
+    background-color: #f5f6f8;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    color: #333333;
+}
