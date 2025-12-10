@@ -31,6 +31,10 @@ body {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-wrapper {
   position: relative;
   display: flex;

@@ -1,298 +1,284 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dashboard - RecuperaMente</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/configuracoes-globais.css" />
+    <link rel="stylesheet" href="./style/navbar-douglas.css" />
+    <link rel="stylesheet" href="./style/footer-douglas.css" />
+    <link rel="stylesheet" href="./style/sugestao-de-atividades-douglas.css" />
+    <link rel="stylesheet" href="style/main-superior-teixeira.css" />
+    <link rel="stylesheet" href="style/estatisticas-teixeira.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!--adicionado link do material symbols pra estilizar botões próximos do calendário de atividades: JALDSON-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Dashboard - RecuperaMente</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style/configuracoes-globais.css"/>
-  <link rel="stylesheet" href="./style/navbar-douglas.css"/>
-  <link rel="stylesheet" href="./style/footer-douglas.css"/>
-  <link rel="stylesheet" href="./style/sugestao-de-atividades-douglas.css"/>
-  <link rel="stylesheet" href="style/main-superior-teixeira.css">
-  <link rel="stylesheet" href="style/estatisticas-teixeira.css">
-  <link rel="stylesheet" href="style.css"/>
-  <!--adicionado link do material symbols pra estilizar botões próximos do calendário de atividades: JALDSON-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-</head>
-
-<body>
-  <div class="page-wrapper">
-    <div class="layout-container">
-      <!-- NAVBAR, RESPONSÁVEL: DOUGLAS -->
-      <header class="app-header">
-        <div class="logo-section">
-          <div class="logo-icon">
-            <img src="./assets/logo-icone.svg" alt="logo icone" />
+  <body>
+    <div class="page-wrapper">
+      <div class="layout-container">
+        <!-- NAVBAR, RESPONSÁVEL: DOUGLAS -->
+        <header class="app-header">
+          <div class="logo-section">
+            <div class="logo-icon">
+              <img src="./assets/logo-icone.svg" alt="logo icone" />
+            </div>
+            <h2 class="logo-text">RecuperaMente</h2>
           </div>
-          <h2 class="logo-text">RecuperaMente</h2>
-        </div>
-        <div class="header-actions">
-          <nav class="main-nav">
-            <a class="nav-link" href="../calendario/index.html">Calendário</a>
-            <a class="nav-link" href="../nova-atividade/index.html">Nova Atividade</a>
-            <a class="nav-link" href="../sobre-nos/index.html">Sobre</a>
-          </nav>
-          <div class="user-actions">
-            <button class="icon-btn logout-button">
-              <img src="./assets/sair-icone.svg" alt="icone sair" />
-            </button>
-          </div>
-        </div>
-      </header>
-
-      <main class="main-content">
-        <div class="dashboard-grid">
-          <div class="col-main">
-            <!--RESPONSÁVEL: TEIXEIRA-->
-            <section class="card focus-section">
-              <h3 class="card-title">Sessão de Foco Atual</h3>
-
-              <div class="timer-layout">
-                <div class="timer-display">
-                  <p class="timer-value">24:15</p>
-                  <p class="timer-quote">
-                    A jornada de mil milhas começa com um único passo.
-                  </p>
-                </div>
-
-                <div class="timer-controls">
-                  <div class="progress-container">
-                    <div class="progress-labels">
-                      <p class="progress-text">Progresso até a próxima pausa</p>
-                      <p class="progress-percent">60%</p>
-                    </div>
-
-                    <div class="progress-track">
-                      <div class="progress-fill" style="width: 60%"></div>
-                    </div>
-                  </div>
-
-                  <div class="timer-buttons">
-                    <button class="btn-action">
-                      Iniciar / Pausar Sessão
-                    </button>
-                    <button class="btn-action-alt">
-                      Encerrar Sessão
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="card calendar-section">
-              <div class="card-header">
-                <h3 class="card-title">Calendário de Atividades</h3>
-
-                <div class="header-tools">
-                  <button class="btn-icon">
-                    <span class="material-symbols-outlined">filter_list</span>
-                  </button>
-
-                  <button class="btn-add">
-                    <span class="material-symbols-outlined">add</span>
-                    <span class="btn-label">Nova Atividade</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="calendar-grid">
-                <div class="cal-day-header">SEG</div>
-                <div class="cal-day-header">TER</div>
-                <div class="cal-day-header">QUA</div>
-                <div class="cal-day-header">QUI</div>
-                <div class="cal-day-header">SEX</div>
-                <div class="cal-day-header">SAB</div>
-                <div class="cal-day-header">DOM</div>
-
-                <div class="cal-day">
-                  <span class="day-number">1</span>
-                </div>
-
-                <div class="cal-day">
-                  <span class="day-number">2</span>
-                  <div class="dot-marker blue"></div>
-                </div>
-
-                <div class="cal-day current-day">
-                  <span class="day-number">3</span>
-                  <div class="dot-marker lilac"></div>
-                  <div class="dot-marker blue"></div>
-                </div>
-
-                <div class="cal-day">
-                  <span class="day-number">4</span>
-                </div>
-
-                <div class="cal-day">
-                  <span class="day-number">5</span>
-                  <div class="dot-marker blue"></div>
-                </div>
-
-                <div class="cal-day">
-                  <span class="day-number">6</span>
-                </div>
-
-                <div class="cal-day">
-                  <span class="day-number">7</span>
-                </div>
-              </div>
-            </section>
-
-
-            <!-- SEÇÃO DE SUGESTÕES DE ATIVIDADES DURANTE A PAUSA, RESPONSÁVEL: DOUGLAS -->
-            <section class="suggestions-section">
-              <h3 class="section-heading">
-                Sugestões de Atividades Durante a Pausa
-              </h3>
-              <div class="suggestions-grid">
-                <div class="suggestion-card">
-                  <div class="suggestion-image" style="
-                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyhnIcBI1a6Wbw3Ni_CKBTD2_D2naBflRvccCKxVbTtGfj-8cQdrKDAIsVUHqEmdeULSWWymchERFaBj-IJk81JPPNUducF7YswxsuILg3mLBTDbm0wZ7ByXzasH6dpx7Ye41wXRdbxD2SwVkCihMWAYjxY7VEJ8qal4jTh-y5YxEgTkw63hYZ7_MYZxSr6m4r9liUv0yOMToCNeO_fGiqTbDkO8rfKp3_r2VTWjnuZtQGZvbVMF1_6VqbQQov6fbsfTOUeMXcG3hF');
-                      "></div>
-                  <h4 class="suggestion-title">Alongamento de 5 minutos</h4>
-                  <a href="https://youtu.be/4-4f10fL1pw?si=v1SAPqfRtnNf43Lc" target="_blank"
-                    class="truncate btn-ver-dica">
-                    <button class="btn-suggestion">
-                      <span class="truncate">Ver dica</span>
-                    </button>
-                  </a>
-                </div>
-                <div class="suggestion-card">
-                  <div class="suggestion-image" style="
-                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjmuJrDtpbXpLyl24RAjNUMhMIxHs4znrBKBl1RpUJa2b5Jy-LRkpDmnFZOyJJ4_73yX9KzCYuQkSY4cQDV3KaAXthOtfNgkaEn9d8a7m2m9RpYPQulKqkrBZ4MB-pXwvjFh83HPi26EhkGOVdpB0Q-_s6LjnYnWa4K6p5Lgzo8QlXqqOoxCEGctM5mE_f1i4Qv9twZddE8kA_swD79kvkRKwfiaGIGzGwFWI9yvVShZI5_mX5u_NTjC_RxK6Z7yi5pV6Tr1SCRUQ6');
-                      "></div>
-                  <h4 class="suggestion-title">Meditação guiada</h4>
-                  <a href="https://youtu.be/mTJ56qy2Flg?si=1FMigoiFtPXCTf83" target="_blank"
-                    class="truncate btn-ver-dica">
-                    <button class="btn-suggestion">
-                      <span class="truncate">Ver dica</span>
-                    </button>
-                  </a>
-                </div>
-                <div class="suggestion-card">
-                  <div class="suggestion-image" style="
-                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKxVoZkJMgDjGr4vo57emQvrBdbtRSaCJRTBp7gqXYcsVUWktPRRYklXPoDHmSLgEASgUvI7E66IdquGeFQ3NXatSASS9PcTit6iYUHlns-9N1ao2e0z1HoX-lCnoAqaKuJ1z0_ZUqUTMJg1Z1ou7FUaVhErrZpewWEnHgC3tWK4OiogT_mSgmJtHF_3GR3DqsQHvXDA9nUbX1y2ln--1CM9DrR4LLKd0Ku4rPkLHF-MHDdlqMz1k52mihQLUXuAKevLwLKxBz6z9W');
-                      "></div>
-                  <h4 class="suggestion-title">Desconecte-se</h4>
-                  <a href="https://youtu.be/fmBRuuQ0Gs8?si=9vVAXRAkzTPvfMUx" target="_blank"
-                    class="truncate btn-ver-dica">
-                    <button class="btn-suggestion">
-                      <span class="truncate">Ver dica</span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div class="col-sidebar">
-            <section class="card break-card">
-              <div class="break-header">
-                <div class="break-icon-wrapper">
-                  <span class="material-symbols-outlined break-icon">self_improvement</span>
-                </div>
-                <h3 class="card-title">Próxima Pausa</h3>
-              </div>
-              <p class="break-time">05:00</p>
-              <p class="break-hint">Sugestão: Que tal um alongamento?</p>
-              <button class="btn-break-action">
-                <span class="truncate">Iniciar Pausa Agora</span>
+          <div class="header-actions">
+            <nav class="main-nav">
+              <a class="nav-link" href="../calendario/index.html">Calendário</a>
+              <a class="nav-link" href="../nova-atividade/index.html"
+                >Nova Atividade</a
+              >
+              <a class="nav-link" href="../sobre-nos/index.html">Sobre</a>
+            </nav>
+            <div class="user-actions">
+              <button class="icon-btn logout-button">
+                <img src="./assets/sair-icone.svg" alt="icone sair" />
               </button>
-            </section>
-
-            <section class="card settings-card">
-              <h3 class="card-title mb-4">Configurações Rápidas</h3>
-              <div class="settings-form">
-                <div class="form-group">
-                  <label class="form-label" for="break-time">Tempo entre pausas</label>
-                  <select class="form-select" id="break-time">
-                    <option>25 minutos</option>
-                    <option>45 minutos</option>
-                    <option>60 minutos</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="break-type">Tipo de pausa preferido</label>
-                  <select class="form-select" id="break-type">
-                    <option>Pausa Curta (5 min)</option>
-                    <option>Pausa Longa (15 min)</option>
-                  </select>
-                </div>
-              </div>
-            </section>
-
-            <!--RESPONSÁVEL: TEIXEIRA-->
-            <section class="card stats-card">
-              <h3 class="card-title">Estatísticas Semanais</h3>
-              <div class="stats-overview">
-                <div class="stat-item">
-                  <p class="stat-value">18h</p>
-                  <p class="stat-label">Horas Focadas</p>
-                </div>
-                <div class="stat-item">
-                  <p class="stat-value">22</p>
-                  <p class="stat-label">Pausas Concluídas</p>
-                </div>
-                <div class="stat-item">
-                  <p class="stat-value">5</p>
-                  <p class="stat-label">Dias Ativos</p>
-                </div>
-              </div>
-
-              <div class="chart-container">
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary" style="height: 60%"></div>
-                  <span class="chart-label">S</span>
-                </div>
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary" style="height: 80%"></div>
-                  <span class="chart-label">T</span>
-                </div>
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary" style="height: 90%"></div>
-                  <span class="chart-label">Q</span>
-                </div>
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary-light" style="height: 40%"></div>
-                  <span class="chart-label">Q</span>
-                </div>
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary" style="height: 75%"></div>
-                  <span class="chart-label">S</span>
-                </div>
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary-light" style="height: 20%"></div>
-                  <span class="chart-label">S</span>
-                </div>
-                <div class="chart-bar-wrapper">
-                  <div class="chart-bar primary-light" style="height: 10%"></div>
-                  <span class="chart-label">D</span>
-                </div>
-              </div>
-            </section>
-
+            </div>
           </div>
-        </div>
-      </main>
+        </header>
 
-      <!-- FOOTER, RESPONSÁVEL: DOUGLAS -->
-      <footer class="footer">
-        <div class="footer-div">
-          <p class="footer-p-copyright">
-            © 2025 RecuperaMente. Todos os direitos reservados.
-          </p>
-          <div class="footer-links">
-            <a class="footer-link" href="/contato">Contato</a>
-            <a class="footer-link" href="/politica-de-privacidade">Política de Privacidade</a>
-            <a class="footer-link" href="/termos-de-uso">Termos de Uso</a>
+        <main class="main-content">
+          <div class="dashboard-grid">
+            <div class="col-main">
+              <!--RESPONSÁVEL: TEIXEIRA-->
+              <section class="card calendar-section">
+                <div class="card-header">
+                  <h3 class="card-title">Calendário de Atividades</h3>
+
+                  <div class="header-tools">
+                    <a href="../calendario/index.html">
+                      <button class="btn-icon">
+                        <span class="btn-label">Ver Calendário</span>
+                      </button>
+                    </a>
+
+                    <a href="../nova-atividade/index.html">
+                      <button class="btn-add">
+                        <span class="material-symbols-outlined">add</span>
+                        <span class="btn-label">Nova Atividade</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="calendar-grid">
+                  <div class="cal-day-header">SEG</div>
+                  <div class="cal-day-header">TER</div>
+                  <div class="cal-day-header">QUA</div>
+                  <div class="cal-day-header">QUI</div>
+                  <div class="cal-day-header">SEX</div>
+                  <div class="cal-day-header">SAB</div>
+                  <div class="cal-day-header">DOM</div>
+
+                  <div class="cal-day">
+                    <span class="day-number">1</span>
+                  </div>
+
+                  <div class="cal-day">
+                    <span class="day-number">2</span>
+                    <div class="dot-marker blue"></div>
+                  </div>
+
+                  <div class="cal-day current-day">
+                    <span class="day-number">3</span>
+                    <div class="dot-marker lilac"></div>
+                    <div class="dot-marker blue"></div>
+                  </div>
+
+                  <div class="cal-day">
+                    <span class="day-number">4</span>
+                  </div>
+
+                  <div class="cal-day">
+                    <span class="day-number">5</span>
+                    <div class="dot-marker blue"></div>
+                  </div>
+
+                  <div class="cal-day">
+                    <span class="day-number">6</span>
+                  </div>
+
+                  <div class="cal-day">
+                    <span class="day-number">7</span>
+                  </div>
+                </div>
+              </section>
+
+              <!-- SEÇÃO DE SUGESTÕES DE ATIVIDADES DURANTE A PAUSA, RESPONSÁVEL: DOUGLAS -->
+              <section class="suggestions-section">
+                <h3 class="section-heading">
+                  Sugestões de Atividades Durante a Pausa
+                </h3>
+                <div class="suggestions-grid">
+                  <div class="suggestion-card">
+                    <div
+                      class="suggestion-image"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyhnIcBI1a6Wbw3Ni_CKBTD2_D2naBflRvccCKxVbTtGfj-8cQdrKDAIsVUHqEmdeULSWWymchERFaBj-IJk81JPPNUducF7YswxsuILg3mLBTDbm0wZ7ByXzasH6dpx7Ye41wXRdbxD2SwVkCihMWAYjxY7VEJ8qal4jTh-y5YxEgTkw63hYZ7_MYZxSr6m4r9liUv0yOMToCNeO_fGiqTbDkO8rfKp3_r2VTWjnuZtQGZvbVMF1_6VqbQQov6fbsfTOUeMXcG3hF');
+                      "
+                    ></div>
+                    <h4 class="suggestion-title">Alongamento de 5 minutos</h4>
+                    <a
+                      href="https://youtu.be/4-4f10fL1pw?si=v1SAPqfRtnNf43Lc"
+                      target="_blank"
+                      class="truncate btn-ver-dica"
+                    >
+                      <button class="btn-suggestion">
+                        <span class="truncate">Ver dica</span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="suggestion-card">
+                    <div
+                      class="suggestion-image"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjmuJrDtpbXpLyl24RAjNUMhMIxHs4znrBKBl1RpUJa2b5Jy-LRkpDmnFZOyJJ4_73yX9KzCYuQkSY4cQDV3KaAXthOtfNgkaEn9d8a7m2m9RpYPQulKqkrBZ4MB-pXwvjFh83HPi26EhkGOVdpB0Q-_s6LjnYnWa4K6p5Lgzo8QlXqqOoxCEGctM5mE_f1i4Qv9twZddE8kA_swD79kvkRKwfiaGIGzGwFWI9yvVShZI5_mX5u_NTjC_RxK6Z7yi5pV6Tr1SCRUQ6');
+                      "
+                    ></div>
+                    <h4 class="suggestion-title">Meditação guiada</h4>
+                    <a
+                      href="https://youtu.be/mTJ56qy2Flg?si=1FMigoiFtPXCTf83"
+                      target="_blank"
+                      class="truncate btn-ver-dica"
+                    >
+                      <button class="btn-suggestion">
+                        <span class="truncate">Ver dica</span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="suggestion-card">
+                    <div
+                      class="suggestion-image"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKxVoZkJMgDjGr4vo57emQvrBdbtRSaCJRTBp7gqXYcsVUWktPRRYklXPoDHmSLgEASgUvI7E66IdquGeFQ3NXatSASS9PcTit6iYUHlns-9N1ao2e0z1HoX-lCnoAqaKuJ1z0_ZUqUTMJg1Z1ou7FUaVhErrZpewWEnHgC3tWK4OiogT_mSgmJtHF_3GR3DqsQHvXDA9nUbX1y2ln--1CM9DrR4LLKd0Ku4rPkLHF-MHDdlqMz1k52mihQLUXuAKevLwLKxBz6z9W');
+                      "
+                    ></div>
+                    <h4 class="suggestion-title">Desconecte-se</h4>
+                    <a
+                      href="https://youtu.be/fmBRuuQ0Gs8?si=9vVAXRAkzTPvfMUx"
+                      target="_blank"
+                      class="truncate btn-ver-dica"
+                    >
+                      <button class="btn-suggestion">
+                        <span class="truncate">Ver dica</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-sidebar">
+              <section class="card break-card">
+                <div class="break-header">
+                  <div class="break-icon-wrapper">
+                    <span class="material-symbols-outlined break-icon"
+                      >self_improvement</span
+                    >
+                  </div>
+                  <h3 class="card-title">Sessão de Foco Atual</h3>
+                </div>
+                <p class="break-hint">
+                  Que tal foca em suas atividades e não prejudicar sua mente?
+                </p>
+                <a href="../sessao-de-foco/index.html">
+                  <button class="btn-break-action">
+                    <span class="truncate">Iniciar Sessão de foco</span>
+                  </button>
+                </a>
+              </section>
+
+              <!--RESPONSÁVEL: TEIXEIRA-->
+              <section class="card stats-card">
+                <h3 class="card-title">Estatísticas Semanais</h3>
+                <div class="stats-overview">
+                  <div class="stat-item">
+                    <p class="stat-value">18h</p>
+                    <p class="stat-label">Horas Focadas</p>
+                  </div>
+                  <div class="stat-item">
+                    <p class="stat-value">22</p>
+                    <p class="stat-label">Pausas Concluídas</p>
+                  </div>
+                  <div class="stat-item">
+                    <p class="stat-value">5</p>
+                    <p class="stat-label">Dias Ativos</p>
+                  </div>
+                </div>
+
+                <div class="chart-container">
+                  <div class="chart-bar-wrapper">
+                    <div class="chart-bar primary" style="height: 60%"></div>
+                    <span class="chart-label">S</span>
+                  </div>
+                  <div class="chart-bar-wrapper">
+                    <div class="chart-bar primary" style="height: 80%"></div>
+                    <span class="chart-label">T</span>
+                  </div>
+                  <div class="chart-bar-wrapper">
+                    <div class="chart-bar primary" style="height: 90%"></div>
+                    <span class="chart-label">Q</span>
+                  </div>
+                  <div class="chart-bar-wrapper">
+                    <div
+                      class="chart-bar primary-light"
+                      style="height: 40%"
+                    ></div>
+                    <span class="chart-label">Q</span>
+                  </div>
+                  <div class="chart-bar-wrapper">
+                    <div class="chart-bar primary" style="height: 75%"></div>
+                    <span class="chart-label">S</span>
+                  </div>
+                  <div class="chart-bar-wrapper">
+                    <div
+                      class="chart-bar primary-light"
+                      style="height: 20%"
+                    ></div>
+                    <span class="chart-label">S</span>
+                  </div>
+                  <div class="chart-bar-wrapper">
+                    <div
+                      class="chart-bar primary-light"
+                      style="height: 10%"
+                    ></div>
+                    <span class="chart-label">D</span>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
-      </footer>
+        </main>
+
+        <!-- FOOTER, RESPONSÁVEL: DOUGLAS -->
+        <footer class="footer">
+          <div class="footer-div">
+            <p class="footer-p-copyright">
+              © 2025 RecuperaMente. Todos os direitos reservados.
+            </p>
+            <div class="footer-links">
+              <a class="footer-link" href="/contato">Contato</a>
+              <a class="footer-link" href="/politica-de-privacidade"
+                >Política de Privacidade</a
+              >
+              <a class="footer-link" href="/termos-de-uso">Termos de Uso</a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-  <script src="./scripts/navbar-douglas.js"></script>
-</body>
-
+    <script src="./scripts/navbar-douglas.js"></script>
+  </body>
 </html>
