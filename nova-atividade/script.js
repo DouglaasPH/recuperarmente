@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       alert("Atividade salva com sucesso!");
+      window.location.href = "/dashboard/index.html";
     } catch (error) {
       alert("Falha ao salvar atividade.");
       console.error(error);

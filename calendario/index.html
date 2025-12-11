@@ -1,242 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Calendário - RecuperaMente</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Calendário - RecuperaMente</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" />
+    <link rel="stylesheet" href="./style/configuracoes-globais.css" />
+    <link rel="stylesheet" href="./style/cabecalho-douglas.css" />
+    <link rel="stylesheet" href="./style/botoes-de-filtro-douglas.css" />
+    <link rel="stylesheet" href="style/navbar-teixeira.css" />
+    <link rel="stylesheet" href="style/footer-teixeira.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./style/configuracoes-globais.css" />
-  <link rel="stylesheet" href="./style/cabecalho-douglas.css" />
-  <link rel="stylesheet" href="./style/botoes-de-filtro-douglas.css" />
-  <link rel="stylesheet" href="style/navbar-teixeira.css">
-  <link rel="stylesheet" href="style/footer-teixeira.css">
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div class="app-container">
-    <div class="layout-wrapper">
-      <div class="main-content-wrapper">
-        <div class="content-container">
-          <!--RESPONSÁVEL: TEIXEIRA-->
-          <header class="app-header">
-            <div class="logo-section">
-              <div class="logo-icon">
-                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
-                    fill="currentColor" fill-rule="evenodd"></path>
-                </svg>
-              </div>
-              <h2 class="logo-text">RecuperaMente</h2>
-            </div>
-
-            <nav class="desktop-nav">
-              <div class="nav-links">
-                <a class="nav-link" href="#">Dashboard</a>
-                <a class="nav-link" href="#">Nova Atividade</a>
-                <a class="nav-link" href="#">Sessão de Foco</a>
-                <a class="nav-link" href="#">Sair</a>
-              </div>
-              <!--ESSTOU ADICIONANDO O ICONE MAS NAO ESTÁ INDO-->
-              <button class="user-avatar-btn">
-                <img class="btn-icon" src="./assets/person-menu.svg" alt="img person icone" />
-              </button>
-            </nav>
-
-            <button class="mobile-menu-btn">
-              <span class="material-symbols-outlined menu-icon">menu</span>
-            </button>
-          </header>
-
-          <main class="main-card">
-            <div class="page-heading">
-              <!-- CABEÇALHO, RESPONSÁVEL: DOUGLAS -->
-              <div class="heading-text">
-                <h1 class="page-title">Meu Calendário de Recuperação</h1>
-                <p class="page-subtitle">
-                  Equilibre seus estudos e pausas para uma jornada acadêmica
-                  mais saudável e produtiva.
-                </p>
-              </div>
-            </div>
-
-            <!-- NOVA ATIVIDADE E FILTROS, RESPONSÁVEL: DOUGLAS -->
-            <div class="controls-toolbar">
-              <div class="action-group">
-                <button class="btn-primary">
-                  <img class="btn-icon" src="./assets/add-nova-atividade-icone.svg" alt="add nova atividade icone" />
-                  <span class="btn-text">Nova Atividade</span>
-                </button>
-
-                <div class="view-toggle">
-                  <label class="toggle-option checked">
-                    <span>Semana</span>
-                    <input checked="" name="view_toggle" type="radio" value="Semana" />
-                  </label>
-                  <label class="toggle-option">
-                    <span>Mês</span>
-                    <input name="view_toggle" type="radio" value="Mês" />
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="calendar-container">
-              <div class="calendar-wrapper">
-                <div class="table-scroll">
-                  <table class="calendar-table">
-                    <thead>
-                      <tr>
-                        <th class="col-time">Horário</th>
-                        <th>Segunda</th>
-                        <th>Terça</th>
-                        <th>Quarta</th>
-                        <th>Quinta</th>
-                        <th>Sexta</th>
-                        <th>Sábado</th>
-                        <th>Domingo</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="time-cell">09:00</td>
-                        <td class="event-cell">
-                          <div class="event-card type-study">
-                            <p class="event-title">Revisão de Cálculo</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-study">
-                            <p class="event-title">Revisão de Cálculo</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-study">
-                            <p class="event-title">Revisão de Cálculo</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell"></td>
-                      </tr>
-                      <tr>
-                        <td class="time-cell">10:00</td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-rest">
-                            <p class="event-title">Pausa para Meditação</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-rest">
-                            <p class="event-title">Pausa para Meditação</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell"></td>
-                      </tr>
-                      <tr>
-                        <td class="time-cell">11:00</td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-study">
-                            <p class="event-title">Aula de Algoritmos</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-study">
-                            <p class="event-title">Aula de Algoritmos</p>
-                          </div>
-                        </td>
-                        <td class="event-cell"></td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Lazer</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Lazer</p>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="time-cell">12:00</td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                        <td class="event-cell">
-                          <div class="event-card type-other">
-                            <p class="event-title">Almoço</p>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
+  <body>
+    <div class="app-container">
+      <div class="layout-wrapper">
+        <div class="main-content-wrapper">
+          <div class="content-container">
             <!--RESPONSÁVEL: TEIXEIRA-->
-            <footer class="stats-footer">
-              <div class="stats-container">
-                <div class="stat-item">
-                  <span class="material-symbols-outlined stat-icon">school</span>
-                  <span>Horas de Estudo: <strong>12h</strong></span>
+            <header class="app-header">
+              <div class="logo-section">
+                <div class="logo-icon">
+                  <img src="./assets/logo-icone.svg" alt="logo icone" />
                 </div>
-                <div class="stat-item">
-                  <span class="material-symbols-outlined stat-icon">self_improvement</span>
-                  <span>Pausas Agendadas: <strong>4</strong></span>
+                <h2 class="logo-text">RecuperaMente</h2>
+              </div>
+
+              <nav class="desktop-nav">
+                <div class="nav-links">
+                  <a class="nav-link" href="../dashboard/index.html"
+                    >Dashboard</a
+                  >
+                  <a class="nav-link" href="../nova-atividade/index.html"
+                    >Nova Atividade</a
+                  >
+                  <a class="nav-link" href="../sessao-de-foco/index.html"
+                    >Sessão de Foco</a
+                  >
                 </div>
-                <div class="stat-item">
-                  <span class="material-symbols-outlined stat-icon">timer</span>
-                  <span>Próxima Pausa: <strong>Amanhã, às 15:00</strong></span>
+              </nav>
+
+              <button class="mobile-menu-btn">
+                <span class="material-symbols-outlined menu-icon">menu</span>
+              </button>
+            </header>
+
+            <main class="main-card">
+              <div class="page-heading">
+                <!-- CABEÇALHO, RESPONSÁVEL: DOUGLAS -->
+                <div class="heading-text">
+                  <h1 class="page-title">Meu Calendário de Recuperação</h1>
+                  <p class="page-subtitle">
+                    Equilibre seus estudos e pausas para uma jornada acadêmica
+                    mais saudável e produtiva.
+                  </p>
                 </div>
               </div>
-            </footer>
-          </main>
+
+              <!-- NOVA ATIVIDADE E FILTROS, RESPONSÁVEL: DOUGLAS -->
+              <div class="controls-toolbar">
+                <div class="action-group">
+                  <button class="btn-primary">
+                    <img
+                      class="btn-icon"
+                      src="./assets/add-nova-atividade-icone.svg"
+                      alt="add nova atividade icone"
+                    />
+                    <a href="../nova-atividade/index.html">
+                      <span class="btn-text">Nova Atividade</span>
+                    </a>
+                  </button>
+
+                  <div class="view-toggle">
+                    <label class="toggle-option checked">
+                      <span>Semana</span>
+                      <input
+                        checked=""
+                        name="view_toggle"
+                        type="radio"
+                        value="Semana"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calendar-container">
+                <div class="calendar-wrapper">
+                  <div class="table-scroll">
+                    <table class="calendar-table">
+                      <thead>
+                        <tr>
+                          <th class="col-time">Horário</th>
+                          <th>Segunda</th>
+                          <th>Terça</th>
+                          <th>Quarta</th>
+                          <th>Quinta</th>
+                          <th>Sexta</th>
+                          <th>Sábado</th>
+                          <th>Domingo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="time-cell">09:00</td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                        </tr>
+                        <tr>
+                          <td class="time-cell">10:00</td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                        </tr>
+                        <tr>
+                          <td class="time-cell">11:00</td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                        </tr>
+                        <tr>
+                          <td class="time-cell">12:00</td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                          <td class="event-cell"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
         </div>
       </div>
+
+      <button class="fab-btn">
+        <span class="material-symbols-outlined fab-icon">add</span>
+      </button>
     </div>
-
-    <button class="fab-btn">
-      <span class="material-symbols-outlined fab-icon">add</span>
-    </button>
-  </div>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

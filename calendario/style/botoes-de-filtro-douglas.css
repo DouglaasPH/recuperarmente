@@ -40,10 +40,15 @@
   opacity: 0.9;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
 }
 
 .btn-icon {

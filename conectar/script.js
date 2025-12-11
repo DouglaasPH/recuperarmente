@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (resposta.ok) {
           localStorage.setItem("usuario_id", JSON.stringify(dados.usuario_id));
           alert("Login realizado com sucesso!");
+          window.location.href = "/dashboard/index.html";
         } else {
           // se o status for erro (400, 401, 500) ele retorna essa mensagem
           const mensagemErro = dados.message || "Email ou Senha Incorretos!";
